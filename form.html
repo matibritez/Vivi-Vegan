@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <label id="cliente">Ingrese su nombre</label>
+    <input type="text" id="nombreCliente">
+    <label id="direccion">Ingrese la dirección de envio</label>
+    <input type="text" id="direccionCliente">
+    <div id="productos">
+        <label>Milanesa Seitan (5u) - $900</label>
+        <select name="Milanesa Seitan">
+            <option selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+        </select>
+        <label>Milanesa no pollo (5u) - $840</label>
+        <select name="Milanesa no pollo" >
+            <option selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+        </select>
+        <label>Nuggets de no pollo (10u) - $600</label>
+        <select name="Nuggets de no pollo">
+            <option selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+        </select>
+    </div>
+
+    
+    <a id="enviar_wsp" href="" target="_blank"><button class="btn btn-primary">Enviar WSP</button> </a>
+    <script src="index.js"></script>
+</body>
+</html>
