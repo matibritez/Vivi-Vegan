@@ -1,12 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 .carousel-inner{
     height: 675px
 }
+
+#infoCompra{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-around;
+}
+
+/* seccion destacados */
+
+#seccionDestacados{
+    margin-top: 5rem;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .destacados{
     display: flex;
     flex-direction: row;
+    margin: 2rem;
 }
 .cardsDestacados{
     display: flex;
     flex-direction: row;
 
+}
+
+/* seccion porque */
+
+#seccionPorque{
+    margin-top: 5rem;
+}
+.porQue{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.porqueViviVegan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.porqueViviVegan > img{
+    width: 8rem;
+}
+
+
+/*footer*/
+footer{
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.suscribite > input{
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+    height: 1.5rem;
+}
+
+/* nosotros */
+#quienesSomos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.imgQuienesSomos >img{
+    width: 15rem;
+}
+#dondeEstamos{
+    margin-top: 5rem;
+}
+
+/* como comprar */
+
+#comoComprar{
+    display: flex;
+    flex-direction: column;
+}
+
+.pasos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.pasos > img{
+    width: 18rem;
+}
+.pasos > div{
+    width: 15rem;
+}
+
+.oculto{
+    display: none;
+}
+.visible{
+    display: flex;
+    margin: 5rem;
+    flex-direction: column;
+}
+
+.visible > input{
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+    height: 1.5rem;
 }

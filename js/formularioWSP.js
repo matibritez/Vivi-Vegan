@@ -1,9 +1,22 @@
+const hacerPedido = document.getElementById('hacerPedido')
+const formPedido = document.getElementById('formPedido')
 
 const enviarWsp = document.getElementById('enviar_wsp')
 const seleccionados = document.getElementsByTagName('select')
 
 const cliente = document.getElementById('nombreCliente')
 const direccion = document.getElementById('direccionCliente')
+
+hacerPedido.addEventListener('click',()=>{
+    if(formPedido.className == 'visible'){
+        formPedido.classList.remove("visible")
+        formPedido.classList.add("oculto")
+    } else {
+        formPedido.classList.remove("oculto")
+        formPedido.classList.add("visible")
+    }
+    
+})
 
 const enviar = () =>{
     
