@@ -52,6 +52,8 @@ const crearCard = () =>{
 }
 
 
+
+
 setTimeout(()=>{
     crearCard()
 },2500)
