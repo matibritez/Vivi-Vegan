@@ -29,15 +29,19 @@ fetch(URL)
 console.log(productos);
 
 let cards = document.createElement('div')
-cards.className='cardsDestacados'
+cards.className="swiper-wrapper"
 let card = ''
+
 
 
 const crearCard = () =>{
     if(productos!=undefined){
+        let num = 0
+
         productos.forEach((e)=>{
+            
             card += `
-            <div class="tarjetas">
+            <div class="swiper-slide slide_${num+=1}">
                 <div class="card" style="width: 15rem;">
                     <img src=${e.url} class="card-img-top" alt="...">
                 </div>
@@ -54,6 +58,17 @@ const crearCard = () =>{
 
 setTimeout(()=>{
     crearCard()
+    let swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 20,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+    });
 },2500)
 
 
