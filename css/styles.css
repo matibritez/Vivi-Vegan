@@ -2,6 +2,12 @@
     padding: 0;
     margin: 0;
 }
+body{
+    margin: 0;
+    background-color: yellow;
+    font-family: grenadine-mvb, sans-serif;
+    font-style: normal;
+}
 .carousel-inner{
     height: 675px
 }
@@ -135,4 +141,86 @@ footer{
     border-radius: 20px;
     width: 100%;
     height: 1.5rem;
+}
+/* CONTACTO*/
+.nav-link{
+    color: #fff;
+}
+.form {
+    max-inline-size: 550px;
+    margin: auto;
+  }
+  
+  .form label {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: .5em;
+    padding-inline-start: .5em;
+  }
+  
+  .form label span {
+    color: #DA1414;
+  }
+  
+  .form input, .form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    padding: .8em;
+    border-radius: .5em;
+    border: 1px solid #858C94;
+  }
+  .form textarea {
+    margin-block-end: 2em;
+    font-family: inherit;
+  }
+  
+  input::-webkit-input-placeholder {
+    color: #0F0A0A88;
+  }
+  
+  
+  .contact {
+    margin-block-end: 5em;
+  }
+  
+  
+ .titulo-contacto{
+    text-align: center;
+ }
+
+.wrapper{
+    background-color: yellow;
+}
+
+
+.form-control{
+    background-color: yellow;
+}
+
+footer{
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    color: yellow;
+}
+
+.suscribite > input{
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+    height: 1.5rem;
+} 
+
+/* PRODUCTOS */
+
+.titulo-productos{
+    text-align: center;
 }
