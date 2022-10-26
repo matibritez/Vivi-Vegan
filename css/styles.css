@@ -213,6 +213,32 @@ h2{
     text-align: center;
  }
 
+ .contenedor-preguntas{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+ }
+
+ .contenedor-pregunta{
+    background:#fff;
+    padding: 40px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .3 ease all;
+    cursor: pointer;
+
+ }
+
+ .contenedor-pregunta:hover{
+    box-shadow: var(--sombra);
+ }
+
+ .contenedor-pregunta:activa{
+    border: 2px solid var(--primary);
+ }
+
+
  footer{
     display: flex;
     margin-top: 5rem;
