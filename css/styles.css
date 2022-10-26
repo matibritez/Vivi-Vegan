@@ -4,7 +4,7 @@
 }
 body{
     margin: 0;
-    background-color: yellow;
+   
     font-family: grenadine-mvb, sans-serif;
     font-style: normal;
 }
@@ -87,6 +87,10 @@ footer{
     height: 1.5rem;
 }
 
+input{
+    color: white;
+}
+
 /* nosotros */
 #quienesSomos{
     display: grid;
@@ -103,10 +107,14 @@ footer{
 
 /* como comprar */
 
+h2{
+    text-align: center;
+}
 #comoComprar{
     display: flex;
     flex-direction: column;
 }
+
 
 .pasos{
     display: flex;
@@ -141,6 +149,22 @@ footer{
     border-radius: 20px;
     width: 100%;
     height: 1.5rem;
+}
+
+.pedidos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pedido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pedido> img{
+    width: 8rem;
 }
 /* CONTACTO*/
 .nav-link{
@@ -189,16 +213,7 @@ footer{
     text-align: center;
  }
 
-.wrapper{
-    background-color: yellow;
-}
-
-
-.form-control{
-    background-color: yellow;
-}
-
-footer{
+ footer{
     display: flex;
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -221,6 +236,17 @@ footer{
 
 /* PRODUCTOS */
 
+.logo{
+    width: 70px;
+}
 .titulo-productos{
     text-align: center;
+}
+
+.navbar{
+    justify-content: space-between;
+}
+
+.redes{
+    width: 30px;
 }
