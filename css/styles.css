@@ -2,18 +2,89 @@
     padding: 0;
     margin: 0;
 }
+body{
+    margin: 0;
+   
+    font-family: grenadine-mvb, sans-serif;
+    font-style: normal;
+}
+
+.carousel-indicators > button{
+    border-radius: 50%;
+    width: 12px !important;
+    height: 12px !important;
+}
+
 .carousel-inner{
     height: 675px
 }
 
-#infoCompra{
-    display: flex;
-    margin-top: 5rem;
-    justify-content: space-around;
+/*Navbar */
+nav{
+    background-color: #1D1D1B;
+    justify-content: space-between;
 }
 
-/* seccion destacados */
+nav > div > ul > .active > .subrayado{
+    display: flex;
+    background-color: #F6A02A;
+    height: 0.25rem;
+}
 
+nav > div > ul > .active > a{
+    display: block;
+    color: #E83F40;
+    background-color: #1D1D1B;
+}
+
+.nav-link, .nav-link:hover{
+    color: #fff;
+}
+
+/* Home */
+
+#infoCompra{
+    display: flex;
+    background-color: #1D1D1B;
+    justify-content: space-around;
+    height: 20rem;
+    flex-direction: column;
+    align-items: center;
+}
+#infoCompra >div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+#infoCompra >div> img{
+    width: 12rem;
+
+}
+
+#infoCompra >button{
+    background: #E83F40;
+    box-shadow: 0px 7px 4px #F6A02A;
+    border-radius: 30px;
+    border: 0;
+    padding: 10px 43px;
+    gap: 20px;
+    color: white;
+}
+
+
+
+/* seccion destacados */
+#seccionDestacados{
+    height: 30rem;
+    
+}
+#seccionDestacados >h2{
+    size: 52px;
+    font-weight: 600;
+    margin: 1rem 0 1rem 0;
+    
+}
 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -31,7 +102,7 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    width: 20rem;
+    width: 15rem;
 }
 
 .swiper-slide img {
@@ -39,10 +110,58 @@
     object-fit: cover;
 }
 
+/* Cards */
+.swiper-slide > .card{
+    width: 18rem;
+    border-radius: 45px
+}
+.swiper-slide > img{
+    width: 290px;
+    height: 251px;
+    border-radius: 44px 44px 0px 0px;
+}
+.swiper-slide > .card > div{
+    padding: 10px 30px;
+    gap: 10px;
+    background-color: #1D1D1B;
+    color: #F6A02A;
+    width: 290px;
+    height: 106px;
+    background: #1D1D1B;
+    border-radius: 0px 0px 44px 44px;
+}
+.swiper-slide > .card >h5{
+    background-color: #1D1D1B;
+    color: #F6A02A;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    border-radius: 50%;
+    background-color: #1D1D1B;
+    width: 70px;
+    height: 70px;
+}
+.swiper-button-next::after, .swiper-button-prev::after{
+    color: #F6A02A;
+    }
+
+#seccionDestacados > div> button{
+    background: #1D1D1B;
+    border-radius: 30px;
+    border:0;
+    margin: 1rem 0 1rem 0;
+}
 /* seccion porque */
 
 #seccionPorque{
     margin-top: 5rem;
+    height: 40rem;
+    background-color: #F6A02A;
+}
+#seccionPorque >h2{
+    font-weight: 500;
+    font-size: 3.2rem;
+    padding: 5rem 0 5rem 0;
 }
 .porQue{
     display: flex;
@@ -54,6 +173,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 25rem;
+}
+.porqueViviVegan > h3{
+    font-weight: 500;
+    font-size: 2.5rem;
 }
 .porqueViviVegan > img{
     width: 8rem;
@@ -63,23 +187,37 @@
 /*footer*/
 footer{
     display: flex;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    height: 15rem;
+    align-items: center;
     flex-direction: row;
     justify-content: space-around;
-
+    background-color: black;
+    color: rgba(217, 217, 217, 1);
 }
 
-.suscribite > input{
+.imgLogo{
+    width: 6rem;
+    height: 5rem;
+}
+
+.suscribite > div > input{
     font-size: 100%;
     padding: 0.8em;
     outline: none;
     border: 2px solid rgb(200, 200, 200);
-    background-color: transparent;
-    border-radius: 20px;
+    background: #F2F2F2;
+    border-radius: 30px;
     width: 100%;
     height: 1.5rem;
 }
+
+.suscribite > div > button{
+    background: #E0E0E0;
+    border-radius: 30px;
+    width: 5rem;
+    height: 2.5rem;
+}
+
 
 /* nosotros */
 #quienesSomos{
@@ -97,10 +235,14 @@ footer{
 
 /* como comprar */
 
+h2{
+    text-align: center;
+}
 #comoComprar{
     display: flex;
     flex-direction: column;
 }
+
 
 .pasos{
     display: flex;
@@ -135,4 +277,136 @@ footer{
     border-radius: 20px;
     width: 100%;
     height: 1.5rem;
+}
+
+.pedidos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pedido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pedido> img{
+    width: 8rem;
+}
+/* CONTACTO*/
+
+.form {
+    max-inline-size: 550px;
+    margin: auto;
+}
+
+.form label {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: .5em;
+    padding-inline-start: .5em;
+}
+
+.form label span {
+    color: #DA1414;
+}
+
+.form input, .form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    padding: .8em;
+    border-radius: .5em;
+    border: 1px solid #858C94;
+}
+.form textarea {
+    margin-block-end: 2em;
+    font-family: inherit;
+}
+
+input::-webkit-input-placeholder {
+    color: #0F0A0A88;
+}
+
+.contact {
+    margin-block-end: 5em;
+}
+
+.titulo-contacto{
+    text-align: center;
+}
+
+.contenedor-preguntas{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.contenedor-pregunta{
+    background:#fff;
+    padding: 40px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .3 ease all;
+    cursor: pointer;
+}
+
+.contenedor-pregunta:hover{
+    box-shadow: var(--sombra);
+}
+
+.contenedor-pregunta:activa{
+    border: 2px solid var(--primary);
+}
+
+
+
+
+/* PRODUCTOS */
+
+.logo{
+    width: 70px;
+}
+.titulo-productos{
+    text-align: center;
+}
+
+/* PRODUCTOS */
+
+.titulo-productos{
+    text-align: center;
+}
+
+#categorias{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    
+}
+
+.filtroCategoria{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 2rem;
+}
+.filtroCategoria > p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: yellow
+}
+
+
+.filtroCategoria > img{
+    width: 12rem;
+}
+
+
+.redes{
+    width: 30px;
 }

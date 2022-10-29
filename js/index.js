@@ -42,10 +42,13 @@ const crearCard = () =>{
             
             card += `
             <div class="swiper-slide slide_${num+=1}">
-                <div class="card" style="width: 15rem;">
-                    <img src=${e.url} class="card-img-top" alt="...">
+                <div class="card">
+                    <img src=${e.url} class="card-img-top" alt="${e.nombre}">
+                    <div>
+                        <h5 class="card-title text-uppercase">${e.nombre}</h5>
+                    </div>
                 </div>
-                <h5 class="card-title text-uppercase">${e.nombre}</h5>
+                
             </div>`
 
             cards.innerHTML = card
