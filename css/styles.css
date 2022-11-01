@@ -47,7 +47,7 @@ nav > div > ul > .active > a{
     display: flex;
     background-color: #1D1D1B;
     justify-content: space-around;
-    height: 20rem;
+    height: 24rem;
     flex-direction: column;
     align-items: center;
 }
@@ -55,10 +55,6 @@ nav > div > ul > .active > a{
     width: 100%;
     display: flex;
     justify-content: space-around;
-
-}
-#infoCompra >div> img{
-    width: 12rem;
 
 }
 
@@ -179,9 +175,18 @@ nav > div > ul > .active > a{
     font-weight: 500;
     font-size: 2.5rem;
 }
-.porqueViviVegan > img{
-    width: 8rem;
+.porqueViviVegan >div{
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    background-color: #1D1D1B;
+    display: flex;
+    justify-content: center;
 }
+.porqueViviVegan >p{
+    width: 25rem;
+}
+
 
 
 /*footer*/
@@ -214,7 +219,7 @@ footer{
 .suscribite > div > button{
     background: #E0E0E0;
     border-radius: 30px;
-    width: 5rem;
+    width: 8rem;
     height: 2.5rem;
 }
 
@@ -259,41 +264,30 @@ h2{
     width: 15rem;
 }
 
-.oculto{
-    display: none;
-}
-.visible{
-    display: flex;
-    margin: 5rem;
-    flex-direction: column;
-}
-
-.visible > input{
-    font-size: 100%;
-    padding: 0.8em;
-    outline: none;
-    border: 2px solid rgb(200, 200, 200);
-    background-color: transparent;
-    border-radius: 20px;
+#seccionPedido{
+    height: 30rem;
+    background-color: #F6A02A;
+    text-align: center;
     width: 100%;
-    height: 1.5rem;
-}
-
-.pedidos{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
 }
-
-.pedido{
+.pedidosTakeaway{
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
-.pedido> img{
-    width: 8rem;
+.pedidosTakeaway >div> p{
+    width: 20rem;
+    height: 0!important;
+    text-align: center;
 }
+
+
 /* CONTACTO*/
 
 .form {
@@ -329,6 +323,10 @@ input::-webkit-input-placeholder {
     color: #0F0A0A88;
 }
 
+.btn{
+    color: yellow;
+    
+}
 .contact {
     margin-block-end: 5em;
 }
@@ -337,30 +335,107 @@ input::-webkit-input-placeholder {
     text-align: center;
 }
 
-.contenedor-preguntas{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
+
+
+.container {
+    width: 90%;
+    margin: 100px auto;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 10px
+        rgba(0,0,0,0.5));
 }
 
-.contenedor-pregunta{
-    background:#fff;
-    padding: 40px;
-    border: 2px solid transparent;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .3 ease all;
+.acordeon{
+    position: relative;
+    
+}
+
+.title{
+    margin-right: 30px;
+    font-family: 'Trueno';
+    font-style: normal;
+    font-size: 52px;
+    
+} 
+
+.content-acordeon{
+    margin-top: 35px;
+    margin-right: 50px;
+}
+ 
+
+.question-answer{
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+    
+}
+.question{
+    display: flex;
+    justify-content: left;
+}
+
+.title.question{
+    margin: 1.4rem 0rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #1D1D1B;
+
+}
+
+.fas{
+    color: #E83F40;
+}
+
+.question-btn{
+    font-size: 1.5rem;
+    background: transparent;
+    border-color: transparent;
     cursor: pointer;
 }
 
-.contenedor-pregunta:hover{
-    box-shadow: var(--sombra);
+.up-icon{
+    display: none;
 }
 
-.contenedor-pregunta:activa{
-    border: 2px solid var(--primary);
+.answer{
+    font-size: 1.2rem;
+    line-height: 1.8;
+    display: none;
 }
 
+
+.show-text .answer{
+    display: block;
+    transition: 12;
+}
+
+.show-text .up-icon{
+    display: inline;
+}
+
+.show-text .down-icon{
+    display: none;
+}
+
+p{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 10px 40px;
+gap: 10px;
+
+width: 1000px;
+height: 83.5px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+}
 
 
 
