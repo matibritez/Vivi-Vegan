@@ -258,7 +258,9 @@ h2{
 .pasos > div{
     width: 15rem;
 }
-
+h2{
+    
+}
 .oculto{
     display: none;
 }
