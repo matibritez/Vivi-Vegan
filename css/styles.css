@@ -4,7 +4,6 @@
 }
 body{
     margin: 0;
-   
     font-family: grenadine-mvb, sans-serif;
     font-style: normal;
 }
@@ -227,15 +226,19 @@ footer{
 /* nosotros */
 #quienesSomos{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    margin: 5rem 0 5rem 0;
+    grid-template-columns: 8fr 1fr;
+    align-items: center;
     
 }
 
 .imgQuienesSomos >img{
-    width: 15rem;
+    width: 30rem;
+    height: 35rem;
+    border-radius: 2.7rem;
 }
 #dondeEstamos{
-    margin-top: 5rem;
+    margin: 5rem 0 5rem 0;
 }
 
 /* como comprar */
@@ -246,24 +249,61 @@ h2{
 #comoComprar{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-
 
 .pasos{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+    margin: 5rem 0 5rem 0;
 }
 
-.pasos > img{
-    width: 18rem;
-}
-.pasos > div{
-    width: 15rem;
+.pasos > div> img{
+    width: 25rem;
 }
 
+.paso{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+    width: 86px;
+    height: 86px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 56px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 62px;
+
+}
+
+.uno{
+    margin-top: -2%;
+    margin-left: -2%;
+    position: absolute;
+    background: #E83F40;
+    color: #80CFF5;
+}
+.dos{
+    margin-top: -2%;
+    margin-left: 21rem;
+    position: absolute;
+    background: #BCCF00;
+    color:#E83F40;
+    
+}
+.tres{
+    margin-top: -2%;
+    margin-left: -2%;
+    position: absolute;
+    background: #80CFF5;
+    color: #FFE864;
+}
 #seccionPedido{
     height: 30rem;
     background-color: #F6A02A;
@@ -454,32 +494,31 @@ flex-grow: 1;
     text-align: center;
 }
 
-#categorias{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    
-}
-
-.filtroCategoria{
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    margin: 2rem;
-}
-.filtroCategoria > p{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: yellow
+.filtros{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem;
 }
 
 
-.filtroCategoria > img{
-    width: 12rem;
+
+.filtros > button{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 12px;
+    gap: 8px;
+    width: 183px;
+    height: 50px;
+    border: 2px solid #1D1D1B;
+    border-radius: 12px;
+    background-color: transparent;
 }
+
 
 
 .redes{
