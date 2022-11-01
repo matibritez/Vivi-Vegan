@@ -44,13 +44,13 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="/img/Carrusel1.png" class="d-block w-100" alt="...">
+            <img src="/img/banner1.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
             <img src="/img/Carrusel2.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="/img/Carrusel3.png" class="d-block w-100" alt="...">
+            <img src="/img/banner3.png" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -65,23 +65,30 @@
     </header>
     <main>
         <section id="comoComprar">
-            <div class="pasos">
-                <img class="rounded-4" src="https://media.istockphoto.com/vectors/phone-with-pizza-on-screen-vector-illustration-flat-cartoon-cellphone-vector-id1156913565?k=20&m=1156913565&s=612x612&w=0&h=hemtdg3lVKQQpBWVg3k_oPJuZMkgfOWs58CqbfrzccY=" alt="">
+            <div class="pasos col-4">
+              <div class="w-100">
+                <span class="paso uno">1</span>
+                <img class="rounded-4" src="../img/mobile_paso1.png" alt="">
+              </div>
                 <div class="d-flex justify-content-center">
                     <h2 class="text-uppercase">hace tu pedido por whatsapp</h2>
                 </div>
                 
             </div>
-            <div class="pasos">
+            <div class="pasos col-5">
                 <div class="d-flex justify-content-center">
                     <h2 class="text-uppercase">armamos tu pedido</h2>
                 </div>
-                
-                <img class="rounded-4" src="https://media.istockphoto.com/vectors/online-internet-shopping-delivery-isometric-concept-vector-id1133864433?k=20&m=1133864433&s=612x612&w=0&h=P502agfw7S4yQXanGSw6S3vTRf5Oz9ZjuJURvrtUBkQ=" alt="">
-                
+                <div class="w-100">
+                  <span class="paso dos">2</span>
+                  <img class="rounded-4" src="../img/mobile_paso2.png" alt="">
+                </div>
             </div>
-            <div class="pasos">
-                <img class="rounded-4" src="https://media.istockphoto.com/vectors/courier-or-delivery-man-in-face-mask-and-gloves-riding-scooter-young-vector-id1253099948?k=20&m=1253099948&s=612x612&w=0&h=_IvtzUiXH_jfEkAN5C1UXDxPZDy7K_QktLTV-h0jRTc=" alt="">
+            <div class="pasos col-5">
+              <div>
+                <span class="paso tres">3</span>
+                <img class="rounded-4" src="../img/mobile_paso3.png" alt="">
+              </div>
                 <div class="d-flex justify-content-center">
                     <h2 class="text-uppercase">recibilo en tu casa</h2>
                 </div>
@@ -93,11 +100,11 @@
           <h3>¡Hacé tu Pedido!</h2>
           <div class="d-flex align-items-center">
             <div class="pedidosTakeaway">
-              <div >
+              <div>
                 <h3>Takeaway</h3>
                 <p>¡Tenes un descuento!</p>
               </div>
-              <div class="">
+              <div>
                 <img src="/img/Instagram_fondo_negro.svg">
                 <img src="/img/Whatsapp_fondo_negro.svg">
               </div>
@@ -125,16 +132,16 @@
       </div>
       <div>
         <h6 class="text-uppercase">seguinos</h6>
-        <div class="d-flex justify-content-between">
-          <a href="" target="_blank"><img class="redes" src="../img/Instagram_fondo_naranja.svg"></a>
-          <a href="" target="_blank"><img class="redes" src="../img/Whatsapp_fondo_naranja.svg"></a>
-        </div>
+            <div class="d-flex justify-content-between">
+                <a href="https://ig.me/m/viviveganok"target="_blank"><img class="redes" src="../img/Instagram_fondo_naranja.svg"></a>
+                <a id="enviar_wsp" target="_blank" onclick="enviar()" href=""><img class="redes" src="../img/Whatsapp_fondo_naranja.svg"></a>
+            </div>
       </div>
     </footer>
     
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>  
     <script src="../js/navbar.js"></script>
-    <script src="../js/formularioWSP.js"></script>
+    <script src="../js/enviarWsp.js"></script>
 </body>
 </html>
