@@ -88,56 +88,25 @@
                 
             </div>
         </section>
-        <section>
-            <div class="d-flex justify-content-center">
-                <button id="hacerPedido" class="btn btn-primary">hacer pedido</button>
-            </div>
-            
-            <div id="formPedido" class="oculto">
-                <label id="cliente">Ingrese su nombre</label>
-                <input type="text" id="nombreCliente">
-                <label id="direccion">Ingrese la dirección de envio</label>
-                <input type="text" id="direccionCliente">
-                <div id="productos">
-                    <label>Milanesa Seitan (5u) - $900</label>
-                    <select name="Milanesa Seitan">
-                        <option selected>0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                    </select>
-                    <label>Milanesa no pollo (5u) - $840</label>
-                    <select name="Milanesa no pollo" >
-                        <option selected>0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                    </select>
-                    <label>Nuggets de no pollo (10u) - $600</label>
-                    <select name="Nuggets de no pollo">
-                        <option selected>0</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                    </select>
-                </div>
-
-            
-                <a id="enviar_wsp" href="" target="_blank"><button class="btn btn-primary">Enviar WSP</button> </a>
-            </div>
-            
-        </section>
+      
         <section id="seccionPedido">
-          <h2>¡Hace tu Pedido!</h2>
-          <div class="pedidos">
-            <div class="pedido">
-              <img class="rounded-circle" src="/img/InstaPedido.svg">
+          <h3>¡Hacé tu Pedido!</h2>
+          <div class="d-flex align-items-center">
+            <div class="pedidosTakeaway">
+              <div >
+                <h3>Takeaway</h3>
+                <p>¡Tenes un descuento!</p>
+              </div>
+              <div class="">
+                <img src="/img/Instagram_fondo_negro.svg">
+                <img src="/img/Whatsapp_fondo_negro.svg">
+              </div>
             </div>
-            <div class="pedido">
-              <img class="rounded-circle" src="/img/WhatPedido.svg">
-            </div>
-            <div class="pedido">
-              <img class="rounded-circle" src="/img/PedidosYa.svg">
+            <div class="pedidosDelivery">
+              <h3>Delivery</h3>
+              <div>
+                <img src="/img/Pedidos_ya_fondo_negro.svg">
+              </div>
             </div>
           </div>
         </section>
@@ -145,19 +114,21 @@
     </main>
     <footer>
       <div>
-        <img class="imgLogo" src="../img/logo2023.png" alt="">
+          <img class="imgLogo" src="../img/logo2023.png" alt="">
       </div>
       <div class="suscribite">
-        <h5 class="text-uppercase">suscribite a nuestro newletter!</h5>
-        <div>
+          <h5 class="text-uppercase">suscribite a nuestro newletter!</h5>
+          <div class="d-flex align-items-center">
             <input type="email" placeholder="correo electrónico">
             <button>Enviar</button>
-        </div>
+          </div>
       </div>
       <div>
         <h6 class="text-uppercase">seguinos</h6>
-        <a href="" target="_blank"><img class="redes"src="/img/Insta.svg"></a>
-        <a href="" target="_blank"><img class="redes"src="/img/What.svg"></a>
+        <div class="d-flex justify-content-between">
+          <a href="" target="_blank"><img class="redes" src="../img/Instagram_fondo_naranja.svg"></a>
+          <a href="" target="_blank"><img class="redes" src="../img/Whatsapp_fondo_naranja.svg"></a>
+        </div>
       </div>
     </footer>
     
