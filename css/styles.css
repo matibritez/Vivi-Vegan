@@ -528,3 +528,33 @@ flex-grow: 1;
 .redes{
     width: 30px;
 }
+
+
+.contenedorCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.cardProducto{
+    padding: 0px;
+    gap: 8px;
+    width: 318.45px;
+    margin: 1rem;
+    }
+.cardProducto > img{
+    border-radius: 44px 44px 0px 0px;
+}
+.cardProducto > div{
+    border-radius: 0px 0px 44px 44px;
+    width: 318.45px;
+    height: 106px;
+    background-color: #1D1D1B;
+}
+
+.cardCategoria{
+    color: white;
+}
+.cardNombre{
+    color: rgba(246, 160, 42, 1)
+}

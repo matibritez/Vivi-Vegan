@@ -1,11 +1,6 @@
-
-/* const filtrar = (e) =>{
-    console.log(e.innerText);
-}   */
-
 const contenido = document.getElementById('contenido')
 
-let productos = []
+let catalogo = []
 
 
 let myInit = {
@@ -24,9 +19,43 @@ fetch(URL)
         return response.json()
     }).then((response)=>{
         response.forEach(element => {
-            productos.push(element)
-            return productos
+            catalogo.push(element)
+            return catalogo
         })
     })
 
-console.log(productos);
+console.log(catalogo);
+
+let contenedorCards = document.createElement('div')
+contenedorCards.className="contenedorCards"
+let cards = ''
+
+const crearCards = () =>{
+    if(catalogo!=undefined){
+        let num = 0
+
+        catalogo.forEach((e)=>{
+            
+            cards += `
+            
+                <div class="cardProducto">
+                    <img src=${e.url} class="card-img-top" alt="${e.nombre}">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <h5 class="card-title text-uppercase cardCategoria">${e.categoria}</h5>
+                        <h5 class='cardNombre'}>${e.nombre}</h5>
+                    </div>
+                </div>
+                
+            `
+
+            contenedorCards.innerHTML = cards
+            contenido.appendChild(contenedorCards)
+        });
+
+    }
+}
+
+
+setTimeout(()=>{
+    crearCards()
+},2500)
