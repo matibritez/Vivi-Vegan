@@ -204,7 +204,7 @@ footer{
     height: 5rem;
 }
 
-.suscribite > div > input{
+#emailSuscripcion{
     font-size: 100%;
     padding: 0.8em;
     outline: none;
@@ -212,14 +212,15 @@ footer{
     background: #F2F2F2;
     border-radius: 30px;
     width: 100%;
-    height: 1.5rem;
+    height: 2.2rem;
 }
 
-.suscribite > div > button{
+#btnSuscribite{
     background: #E0E0E0;
     border-radius: 30px;
     width: 8rem;
-    height: 2.5rem;
+    height: 2.25rem;
+    color: #1D1D1B;
 }
 
 
@@ -346,7 +347,7 @@ h2{
     color: #DA1414;
 }
 
-.form input, .form textarea {
+.form .form textarea {
     box-sizing: border-box;
     width: 100%;
     font-size: 1rem;
@@ -363,8 +364,11 @@ input::-webkit-input-placeholder {
     color: #0F0A0A88;
 }
 
-.btn{
-    color: yellow;
+.btn, .btn:hover{
+    color:#FFE864;
+    background: #1D1D1B;
+    border-radius: 1.8rem;
+    padding: 10px 43px;
     
 }
 .contact {
@@ -523,4 +527,34 @@ flex-grow: 1;
 
 .redes{
     width: 30px;
+}
+
+
+.contenedorCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.cardProducto{
+    padding: 0px;
+    gap: 8px;
+    width: 318.45px;
+    margin: 1rem;
+    }
+.cardProducto > img{
+    border-radius: 44px 44px 0px 0px;
+}
+.cardProducto > div{
+    border-radius: 0px 0px 44px 44px;
+    width: 318.45px;
+    height: 106px;
+    background-color: #1D1D1B;
+}
+
+.cardCategoria{
+    color: white;
+}
+.cardNombre{
+    color: rgba(246, 160, 42, 1)
 }

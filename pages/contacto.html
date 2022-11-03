@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/zfr7ifu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>     
+</head>
     <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -46,7 +47,7 @@
             <img src="/img/banner1.png" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-            <img src="/img/Carrusel2.png" class="d-block w-100" alt="...">
+            <img src="/img/banner2.png" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
             <img src="/img/banner3.png" class="d-block w-100" alt="...">
@@ -64,22 +65,22 @@
     <div class="wrapper">
         <div class="container">
         <h2 class="titulo-contacto">ENVIANOS TU CONSULTA</h2>
-        <form target="_blank" action="https://formsubmit.co/matiasbritez36@gmail.com" method="POST">
+        <form id="form" method="post" class="form">
             <div class="row">
-            <div class="col">
-                <input type="text" name="Nombre"class="form-control" placeholder="Nombre">
+                <div class="col">
+                    <input type="text" id="nombre"class="form-control" placeholder="Nombre">
+                </div>
+                <div class="col">
+                    <input type="text" id="telefono" class="form-control" placeholder="Telefono">
+                </div>
             </div>
             <div class="col">
-                <input type="text" name="Telefono" class="form-control" placeholder="Telefono">
-            </div>
-            </div>
-            <div class="col">
-            <input type="text" name="Email" class="form-control" placeholder="Email">
+                <input type="text" id="email" class="form-control" placeholder="Email">
             </div>
             <div class="form-row">
-            <textarea placeholder="Mensaje" class="form-control" name="Mensaje" rows="10" required></textarea>
+                <textarea placeholder="Mensaje" class="form-control" id="mensaje" rows="10" required></textarea>
             </div>
-            <button type="submit" class="btn btn-lg btn-dark btn-block">Enviar</button>
+            <input type="submit" id="enviarMail" class="btn" value="Enviar">
         </form>
         </div>
     </div>
@@ -231,10 +232,10 @@
         </div>
         <div class="suscribite">
             <h5 class="text-uppercase">suscribite a nuestro newletter!</h5>
-            <div class="d-flex align-items-center">
-                <input type="email" placeholder="correo electrónico">
-                <button>Enviar</button>
-            </div>
+            <form class="d-flex align-items-center" id="suscribite">
+                <input id="emailSuscripcion" type="email" placeholder="correo electrónico">
+                <input type="submit" id="btnSuscribite" value="Enviar">
+            </form>
         </div>
         <div>
             <h6 class="text-uppercase">seguinos</h6>
@@ -245,8 +246,9 @@
         </div>
     </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>  
-        <script src="../js/navbar.js"></script>
+        
         <script src="../js/preguntasFrecuentes.js"></script>
         <script src="../js/enviarWsp.js"></script>
+        <script src="../js/suscribite.js"></script>
     </body>
     </html> 
