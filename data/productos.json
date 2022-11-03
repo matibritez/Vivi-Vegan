@@ -1,19 +1,20 @@
 [
+
   {
       "id": 1,
-      "url": "./img/prueba2.png",
+      "url": "../img/prueba2.png",
       "nombre": "CHORIZOS BOMBON",
       "categoria": "parrilla"
   },
   {
       "id": 2,
-      "url": "./img/prueba2.png",
+      "url": "../img/prueba2.png",
       "nombre": "SUPER CHORIS",
       "categoria": "parrilla"
   },
   {
       "id": 3,
-      "url": "./img/prueba2.png",
+      "url": "../img/prueba2.png",
       "nombre": "BIFECITOS DE SEITÁN",
       "categoria": "parrilla"
   },
