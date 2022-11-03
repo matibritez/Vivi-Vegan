@@ -1,13 +1,3 @@
-
-/* const filtrar = (e) =>{
-    console.log(e.innerText);
-}   */
-
-const contenido = document.getElementById('contenido')
-
-let productos = []
-
-
 let myInit = {
     method:'GET',
     headers:{
@@ -29,5 +19,4 @@ fetch(URL)
         })
     })
 
-console.log(productos);
 
