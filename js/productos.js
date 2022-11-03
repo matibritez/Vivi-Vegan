@@ -1,6 +1,16 @@
 const contenido = document.getElementById('contenido')
 
+
 let catalogo = []
+
+/* const filtrar = (e) =>{
+    console.log(e.innerText);
+}   */
+
+const contenido = document.getElementById('contenido')
+
+let productos = []
+
 
 
 let myInit = {
@@ -19,6 +29,7 @@ fetch(URL)
         return response.json()
     }).then((response)=>{
         response.forEach(element => {
+
             catalogo.push(element)
             return catalogo
         })
@@ -59,3 +70,12 @@ const crearCards = () =>{
 setTimeout(()=>{
     crearCards()
 },2500)
+
+            productos.push(element)
+            return productos
+        })
+    })
+
+console.log(productos);
+
+
