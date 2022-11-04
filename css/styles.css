@@ -541,7 +541,10 @@ flex-grow: 1;
     gap: 8px;
     width: 318.45px;
     margin: 1rem;
+    
     }
+
+ 
 .cardProducto > img{
     border-radius: 44px 44px 0px 0px;
 }

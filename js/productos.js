@@ -34,6 +34,30 @@ fetch(URL)
 
 console.log(catalogo);
 
+
+const filtroProductos = document.querySelectorAll('.filtroProducto')
+
+
+filtroProductos.forEach(function(btn){
+    btn.addEventListener('click', function(e){
+        const categoria = e.currentTarget.dataset.id;
+        const menuCategoria = catalogo.filter(function(menuItem){
+            // console.log(menuItem.categoria)
+
+            if(menuItem.categoria=== categoria){
+                return menuItem
+            }
+        })
+        /*if(categoria  === 'viandas'){
+            crearCards(catalogo)
+        }else{
+            crearCards(menuCategoria)
+        }
+        */
+            console.log(menuCategoria)
+    })
+})
+
 let contenedorCards = document.createElement('div')
 contenedorCards.className="contenedorCards"
 let cards = ''
@@ -67,4 +91,6 @@ const crearCards = () =>{
 setTimeout(()=>{
     crearCards()
 },2500)
+
+
 

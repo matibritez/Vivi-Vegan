@@ -2,109 +2,109 @@
 
   {
       "id": 1,
-      "url": "../img/prueba2.png",
+      "url": "../img/productos/chorisBombon.jpg",
       "nombre": "CHORIZOS BOMBON",
       "categoria": "parrilla"
   },
   {
       "id": 2,
-      "url": "../img/prueba2.png",
+      "url": "../img/productos/superChoris.jpg",
       "nombre": "SUPER CHORIS",
       "categoria": "parrilla"
   },
   {
       "id": 3,
-      "url": "../img/prueba2.png",
+      "url": "../img/productos/bifecitosSeitan.jpg",
       "nombre": "BIFECITOS DE SEITÁN",
       "categoria": "parrilla"
   },
   {
       "id": 4,
-      "url": "../img/prueba2.png",
+      "url": "../img/productos/seitan.jpg",
       "nombre": "SEITAN",
       "categoria": "mila"
   },
   {
       "id": 5,
-      "url": "../img/prueba2.png",
+      "url": "../img/productos/noPollo.jpg",
       "nombre": "NO POLLO",
       "categoria": "mila"
   },
   {
     "id": 6,
-    "url": "../img/prueba2.png",
+    "url": "../img/productos/noPollo.jpg",
     "nombre": "NO POLLO",
     "categoria": "mila"
   },
   {
     "id": 7,
-    "url": "../img/prueba2.png",
+    "url": "../img/productos/caprese.jpg",
     "nombre": "CAPRESSE",
     "categoria": "EMPANADAS"
   },
   {
     "id": 8,
-    "url": "../img/prueba2.png",
+    "url": "../img/productos/empanadasSoja.jpg",
     "nombre": "SOJA",
     "categoria": "EMPANADAS"
   },
   {
     "id": 9,
-    "url": "../img/prueba2.png",
+    "url": "../img/productos/empanadasVerdura.jpg",
     "nombre": "VERDURAS",
     "categoria": "EMPANADAS"
   },
   {
     "id": 10,
-    "url": "../img/prueba2.png",
+    "url": "../img/productos/empanadasNoPollo.jpg",
     "nombre": "NO POLLO",
     "categoria": "EMPANADAS"
   },
   {
     "id": 11,
-    "url": "../img/prueba2.png",
+    "url": "../img/productos/empanadasSeitan.jpg",
     "nombre": "CARNE DE SEITÁN",
     "categoria": "EMPANADAS"
   },
   {
     "id": 12,
-    "url": "../img/prueba2.png",
+    "url": "../img/productos/hamburguesasLentejas.jpg",
     "nombre": "LENTEJAS Y PORTOBELLOS",
     "categoria": "HAMBURGUESAS"
   },
   {
     "id": 13,
-    "url": "../img/prueba2.png",
+    "url": "../img/productos/hamburguesasLentejas.jpg",
     "nombre": "LENTEJAS",
     "categoria": "HAMBURGUESAS"
   },
   {
     "id": 14,
-    "url": "../img/prueba2.png",
+    "url": "../img/productos/hamburguesasRemolacha.jpg",
     "nombre": "REMOLACHA",
     "categoria": "HAMBURGUESAS"
   },
   {
     "id": 15,
-    "url": "../img/prueba2.png",
+    "url": "../img/productos/hamburguesasTomillo.jpg",
     "nombre": "SOJA Y TOMILLO",
     "categoria": "HAMBURGUESAS"
   },
   {
     "id": 16,
-    "url": "../img/prueba2.png",
+    "url": "../img/productos/mayos.jpg",
     "nombre": "REMOLACHA,ZANAHORIA O ARVEJAS",
     "categoria": "MAYOSYDIPS"
   },
   {
     "id": 17,
-    "url": "../img/prueba2.png",
+    "url": "../img/productos/hummus.jpg",
     "nombre": "HUMMUS",
     "categoria": "MAYOSYDIPS"
   },
   {
     "id": 18,
-    "url": "../img/prueba2.png",
+    "url": "../img/productos/hummusOliva.jpg",
     "nombre": "HUMUS AL OLIVIA",
     "categoria": "MAYOSYDIPS"
   }
