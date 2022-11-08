@@ -1,3 +1,4 @@
+
 const contenido = document.getElementById('contenido')
 
 let catalogo = []
@@ -38,7 +39,7 @@ const crearCards = () =>{
             
             cards += `
             
-                <div class="cardProducto">
+                <div class="cardProducto" data-name=${e.categoria.toUpperCase()}>
                     <img src=${e.url} class="card-img-top" alt="${e.nombre}">
                     <div class="d-flex flex-column justify-content-center align-items-center">
                         <h5 class="card-title text-uppercase cardCategoria">${e.categoria}</h5>
@@ -55,7 +56,30 @@ const crearCards = () =>{
     }
 }
 
+const filtrar = (e) =>{
+    let filtro = e.innerText.toUpperCase()
+    let cardsAFiltrar = document.getElementsByClassName('cardProducto')
+    
+    for(let item of cardsAFiltrar){
+        let name = item.dataset.name
+        if(name != filtro){
+            item.classList.add('d-none');
+        } else{
+            item.classList.remove('d-none')
+        }
+    }
+    console.log(filtro);
+} 
+
+const borrarFiltro = ()=>{
+    let cardsAFiltrar = document.getElementsByClassName('cardProducto')
+    for(let item of cardsAFiltrar){
+            item.classList.remove('d-none')
+        }
+    
+}
 
 setTimeout(()=>{
     crearCards()
+    console.log(contenedorCards);
 },2500)
