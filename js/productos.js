@@ -28,6 +28,9 @@ fetch(URL)
 
 
 
+
+const filtroProductos = document.querySelectorAll('.filtroProducto')
+
 let contenedorCards = document.createElement('div')
 contenedorCards.className="contenedorCards"
 let cards = ''
@@ -84,3 +87,6 @@ setTimeout(()=>{
     crearCards()
     console.log(contenedorCards);
 },2500)
+
+
+
