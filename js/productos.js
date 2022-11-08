@@ -1,7 +1,7 @@
 
 const contenido = document.getElementById('contenido')
 
-let productos = []
+let catalogo = []
 
 
 let myInit = {
@@ -26,7 +26,7 @@ fetch(URL)
         })
     })
 
-console.log(catalogo);
+
 
 let contenedorCards = document.createElement('div')
 contenedorCards.className="contenedorCards"

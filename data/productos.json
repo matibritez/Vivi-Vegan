@@ -2,218 +2,110 @@
 
   {
       "id": 1,
-      "url": "../img/prueba2.png",
+      "url": "../img/prueba2.jpg",
       "nombre": "CHORIZOS BOMBON",
       "categoria": "parrilla"
   },
   {
       "id": 2,
-      "url": "../img/prueba2.png",
+      "url": "../img/prueba2.jpg",
       "nombre": "SUPER CHORIS",
       "categoria": "parrilla"
   },
   {
       "id": 3,
-      "url": "../img/prueba2.png",
+      "url": "../img/prueba2.jpg",
       "nombre": "BIFECITOS DE SEITÁN",
       "categoria": "parrilla"
   },
   {
       "id": 4,
-      "url": "../img/prueba2.png",
+      "url": "../img/prueba2.jpg",
       "nombre": "SEITAN",
       "categoria": "mila"
   },
   {
       "id": 5,
-      "url": "../img/prueba2.png",
+      "url": "../img/prueba2.jpg",
       "nombre": "NO POLLO",
       "categoria": "mila"
   },
   {
     "id": 6,
-    "url": "../img/prueba2.png",
+    "url": "../img/prueba2.jpg",
     "nombre": "NO POLLO",
     "categoria": "mila"
   },
   {
     "id": 7,
-    "url": "../img/prueba2.png",
+    "url": "../img/prueba2.jpg",
     "nombre": "CAPRESSE",
     "categoria": "EMPANADAS"
   },
   {
     "id": 8,
-    "url": "../img/prueba2.png",
+    "url": "../img/prueba2.jpg",
     "nombre": "SOJA",
     "categoria": "EMPANADAS"
   },
   {
     "id": 9,
-    "url": "../img/prueba2.png",
+    "url": "../img/prueba2.jpg",
     "nombre": "VERDURAS",
     "categoria": "EMPANADAS"
   },
   {
     "id": 10,
-    "url": "../img/prueba2.png",
+    "url": "../img/prueba2.jpg",
     "nombre": "NO POLLO",
     "categoria": "EMPANADAS"
   },
   {
     "id": 11,
-    "url": "../img/prueba2.png",
+    "url": "../img/prueba2.jpg",
     "nombre": "CARNE DE SEITÁN",
     "categoria": "EMPANADAS"
   },
   {
     "id": 12,
-    "url": "../img/prueba2.png",
+    "url": "../img/prueba2.jpg",
     "nombre": "LENTEJAS Y PORTOBELLOS",
     "categoria": "HAMBURGUESAS"
   },
   {
     "id": 13,
-    "url": "../img/prueba2.png",
+    "url": "../img/prueba2.jpg",
     "nombre": "LENTEJAS",
     "categoria": "HAMBURGUESAS"
   },
   {
     "id": 14,
-    "url": "../img/prueba2.png",
+    "url": "../img/prueba2.jpg",
     "nombre": "REMOLACHA",
     "categoria": "HAMBURGUESAS"
   },
   {
     "id": 15,
-    "url": "../img/prueba2.png",
+    "url": "../img/prueba2.jpg",
     "nombre": "SOJA Y TOMILLO",
     "categoria": "HAMBURGUESAS"
   },
   {
     "id": 16,
-    "url": "../img/prueba2.png",
+    "url": "../img/prueba2.jpg",
     "nombre": "REMOLACHA,ZANAHORIA O ARVEJAS",
     "categoria": "MAYOSYDIPS"
   },
   {
     "id": 17,
-    "url": "../img/prueba2.png",
+    "url": "../img/prueba2.jpg",
     "nombre": "HUMMUS",
     "categoria": "MAYOSYDIPS"
   },
   {
     "id": 18,
-    "url": "../img/prueba2.png",
+    "url": "../img/prueba2.jpg",
     "nombre": "HUMUS AL OLIVIA",
     "categoria": "MAYOSYDIPS"
   }
-  
-
-    {
-        "id": 1,
-        "url": "https://drive.google.com/file/d/11uzEavE0w7Qs_KivY6AumtCtrd4FbC0U/view?usp=sharing",
-        "nombre": "CHORIZOS BOMBON",
-        "categoria": "parrilla"
-    },
-    {
-        "id": 2,
-        "url": "",
-        "nombre": "SUPER CHORIS",
-        "categoria": "parrilla"
-    },
-    {
-        "id": 3,
-        "url": "",
-        "nombre": "BIFECITOS DE SEITÁN",
-        "categoria": "parrilla"
-    },
-    {
-        "id": 4,
-        "url": "",
-        "nombre": "SEITAN",
-        "categoria": "mila"
-    },
-    {
-        "id": 5,
-        "url": "",
-        "nombre": "NO POLLO",
-        "categoria": "mila"
-    },
-    {
-      "id": 6,
-      "url": "",
-      "nombre": "NO POLLO",
-      "categoria": "mila"
-    },
-    {
-      "id": 7,
-      "url": "",
-      "nombre": "CAPRESSE",
-      "categoria": "EMPANADAS"
-    },
-    {
-      "id": 8,
-      "url": "",
-      "nombre": "SOJA",
-      "categoria": "EMPANADAS"
-    },
-    {
-      "id": 9,
-      "url": "",
-      "nombre": "VERDURAS",
-      "categoria": "EMPANADAS"
-    },
-    {
-      "id": 10,
-      "url": "",
-      "nombre": "NO POLLO",
-      "categoria": "EMPANADAS"
-    },
-    {
-      "id": 11,
-      "url": "",
-      "nombre": "CARNE DE SEITÁN",
-      "categoria": "EMPANADAS"
-    },
-    {
-      "id": 12,
-      "url": "",
-      "nombre": "LENTEJAS Y PORTOBELLOS",
-      "categoria": "HAMBURGUESAS"
-    },
-    {
-      "id": 13,
-      "url": "",
-      "nombre": "LENTEJAS",
-      "categoria": "HAMBURGUESAS"
-    },
-    {
-      "id": 14,
-      "url": "https://drive.google.com/file/d/10JtAOAYS0das5sh8YE4K_AfJMfyHhOpv/view?usp=share_link",
-      "nombre": "REMOLACHA",
-      "categoria": "HAMBURGUESAS"
-    },
-    {
-      "id": 15,
-      "url": "",
-      "nombre": "SOJA Y TOMILLO",
-      "categoria": "HAMBURGUESAS"
-    },
-    {
-      "id": 16,
-      "url": "",
-      "nombre": "REMOLACHA,ZANAHORIA O ARVEJAS",
-      "categoria": "MAYOSYDIPS"
-    },
-    {
-      "id": 17,
-      "url": "",
-      "nombre": "HUMMUS",
-      "categoria": "MAYOSYDIPS"
-    },
-    {
-      "id": 18,
-      "url": "",
-      "nombre": "HUMUS AL OLIVIA",
-      "categoria": "MAYOSYDIPS"
+]
