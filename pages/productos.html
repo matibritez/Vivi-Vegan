@@ -66,22 +66,17 @@
         <section id="categorias">
             <h2 class="titulo-productos">CONOCE NUESTROS PRODUCTOS VEGAN</h2>
             <div class="filtros">
-                <button class="filtroProducto" data-id="viandas">Viandas</button>
-                <button class="filtroProducto" data-id="EMPANADAS">Empanadas</button>
-                <button class="filtroProducto" data-id="mila">Milanesas</button>
-                <button class="filtroProducto" data-id="HAMBURGUESAS">Burger</button>
-                <button class="filtroProducto" data-id="parrilla">Parrilla</button>
-                <button class="filtroProducto" data-id="MAYOSYDIPS">Mayos y Dips</button>
+                <button  class="filtroProducto" onclick="filtrar(this)">Viandas</button>
+                <button  class="filtroProducto" onclick="filtrar(this)">Empanadas</button>
+                <button  class="filtroProducto" onclick="filtrar(this)">Milanesas</button>
+                <button  class="filtroProducto" onclick="filtrar(this)">Burger</button>
+                <button class="filtroProducto" onclick="filtrar(this)" >Parrilla</button>
+                <button class="filtroProducto" onclick="filtrar(this)">Mayos y Dips</button>
+                <button class="filtroProducto" onclick="borrarFiltro()">Todos</button>
             </div>
-            <div id="contenido">
-
-            </div>
-            
-
-                
-            </div>
-
+            <div id="contenido"></div>
         </section>
+        
     </main>
     
     <footer>
