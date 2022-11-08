@@ -1,7 +1,7 @@
 
 const contenido = document.getElementById('contenido')
 
-let catalogo = []
+let productos = []
 
 
 let myInit = {
@@ -20,6 +20,7 @@ fetch(URL)
         return response.json()
     }).then((response)=>{
         response.forEach(element => {
+
             catalogo.push(element)
             return catalogo
         })

@@ -59,6 +59,8 @@ const crearCard = () =>{
 }
 
 
+
+
 setTimeout(()=>{
     crearCard()
     let swiper = new Swiper(".mySwiper", {
