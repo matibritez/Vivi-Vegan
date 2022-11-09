@@ -57,7 +57,7 @@ nav > div > ul > .active > a{
 
 }
 
-#infoCompra >button{
+#infoCompra > a >button{
     background: #E83F40;
     box-shadow: 0px 7px 4px #F6A02A;
     border-radius: 30px;
@@ -334,7 +334,21 @@ h2{
 .form {
     max-inline-size: 550px;
     margin: auto;
+    flex-direction: column;
+    align-items: center;
 }
+
+.form > div{
+    padding-bottom: 1rem;
+    width: 100%;
+    
+}
+
+.form-control{
+    border: 3px solid #1D1D1B;
+    border-radius: 16px;
+}
+
 
 .form label {
     display: block;
@@ -352,8 +366,6 @@ h2{
     width: 100%;
     font-size: 1rem;
     padding: .8em;
-    border-radius: .5em;
-    border: 1px solid #858C94;
 }
 .form textarea {
     margin-block-end: 2em;
@@ -369,6 +381,7 @@ input::-webkit-input-placeholder {
     background: #1D1D1B;
     border-radius: 1.8rem;
     padding: 10px 43px;
+    width: 40%;
     
 }
 .contact {
@@ -387,9 +400,8 @@ input::-webkit-input-placeholder {
     position: relative;
     margin-top: 50px;
     margin-bottom: 30px;
-    border-radius: 10px;
-    filter: drop-shadow(0 0 10px
-        rgba(0,0,0,0.5));
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .acordeon{
@@ -398,6 +410,7 @@ input::-webkit-input-placeholder {
 }
 
 .title{
+    font-weight: bold;
     margin-right: 30px;
     font-family: 'Trueno';
     font-style: normal;
@@ -413,7 +426,6 @@ input::-webkit-input-placeholder {
 
 .question-answer{
     width: 100%;
-    border-bottom: 1px solid #e8e8e8;
     
 }
 .question{
@@ -424,7 +436,7 @@ input::-webkit-input-placeholder {
 .title.question{
     margin: 1.4rem 0rem;
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 200;
     color: #1D1D1B;
 
 }
@@ -544,7 +556,6 @@ flex-grow: 1;
     
     }
 
- 
 .cardProducto > img{
     border-radius: 44px 44px 0px 0px;
 }
