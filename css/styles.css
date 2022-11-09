@@ -4,22 +4,84 @@
 }
 body{
     margin: 0;
-   
     font-family: grenadine-mvb, sans-serif;
     font-style: normal;
 }
+
+.carousel-indicators > button{
+    border-radius: 50%;
+    width: 12px !important;
+    height: 12px !important;
+}
+
 .carousel-inner{
     height: 675px
 }
 
-#infoCompra{
-    display: flex;
-    margin-top: 5rem;
-    justify-content: space-around;
+/*Navbar */
+nav{
+    background-color: #1D1D1B;
+    justify-content: space-between;
 }
 
-/* seccion destacados */
+nav > div > ul > .active > .subrayado{
+    display: flex;
+    background-color: #F6A02A;
+    height: 0.25rem;
+}
 
+nav > div > ul > .active > a{
+    display: block;
+    color: #E83F40;
+    background-color: #1D1D1B;
+}
+
+.nav-link, .nav-link:hover{
+    color: #fff;
+}
+
+/* Home */
+
+
+#infoCompra{
+    display: flex;
+    background-color: #1D1D1B;
+    justify-content: space-around;
+    height: 24rem;
+    flex-direction: column;
+    align-items: center;
+}
+#infoCompra >div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#infoCompra >button{
+    background: #E83F40;
+    box-shadow: 0px 7px 4px #F6A02A;
+    border-radius: 30px;
+    border: 0;
+    padding: 10px 43px;
+    gap: 20px;
+    color: white;
+}
+
+
+
+
+/* seccion destacados */
+#seccionDestacados{
+    height: 30rem;
+    
+}
+#seccionDestacados >h2{
+    size: 52px;
+    font-weight: 600;
+    margin: 1rem 0 1rem 0;
+    
+}
 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -37,7 +99,7 @@ body{
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    width: 20rem;
+    width: 15rem;
 }
 
 .swiper-slide img {
@@ -45,10 +107,58 @@ body{
     object-fit: cover;
 }
 
+/* Cards */
+.swiper-slide > .card{
+    width: 18rem;
+    border-radius: 45px
+}
+.swiper-slide > img{
+    width: 290px;
+    height: 251px;
+    border-radius: 44px 44px 0px 0px;
+}
+.swiper-slide > .card > div{
+    padding: 10px 30px;
+    gap: 10px;
+    background-color: #1D1D1B;
+    color: #F6A02A;
+    width: 290px;
+    height: 106px;
+    background: #1D1D1B;
+    border-radius: 0px 0px 44px 44px;
+}
+.swiper-slide > .card >h5{
+    background-color: #1D1D1B;
+    color: #F6A02A;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    border-radius: 50%;
+    background-color: #1D1D1B;
+    width: 70px;
+    height: 70px;
+}
+.swiper-button-next::after, .swiper-button-prev::after{
+    color: #F6A02A;
+    }
+
+#seccionDestacados > div> button{
+    background: #1D1D1B;
+    border-radius: 30px;
+    border:0;
+    margin: 1rem 0 1rem 0;
+}
 /* seccion porque */
 
 #seccionPorque{
     margin-top: 5rem;
+    height: 40rem;
+    background-color: #F6A02A;
+}
+#seccionPorque >h2{
+    font-weight: 500;
+    font-size: 3.2rem;
+    padding: 5rem 0 5rem 0;
 }
 .porQue{
     display: flex;
@@ -60,50 +170,166 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 25rem;
 }
-.porqueViviVegan > img{
-    width: 8rem;
+.porqueViviVegan > h3{
+    font-weight: 500;
+    font-size: 2.5rem;
 }
+.porqueViviVegan >div{
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+    background-color: #1D1D1B;
+    display: flex;
+    justify-content: center;
+}
+.porqueViviVegan >p{
+    width: 25rem;
+}
+
 
 
 /*footer*/
 footer{
     display: flex;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    height: 15rem;
+    align-items: center;
     flex-direction: row;
     justify-content: space-around;
-
+    background-color: black;
+    color: rgba(217, 217, 217, 1);
 }
 
-.suscribite > input{
+.imgLogo{
+    width: 6rem;
+    height: 5rem;
+}
+
+#emailSuscripcion{
     font-size: 100%;
     padding: 0.8em;
     outline: none;
     border: 2px solid rgb(200, 200, 200);
-    background-color: transparent;
-    border-radius: 20px;
+    background: #F2F2F2;
+    border-radius: 30px;
     width: 100%;
-    height: 1.5rem;
+    height: 2.2rem;
 }
 
-input{
-    color: white;
+#btnSuscribite{
+    background: #E0E0E0;
+    border-radius: 30px;
+    width: 8rem;
+    height: 2.25rem;
+    color: #1D1D1B;
 }
+
 
 /* nosotros */
 #quienesSomos{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    margin: 5rem 0 5rem 0;
+    grid-template-columns: 8fr 1fr;
+    align-items: center;
     
 }
 
 .imgQuienesSomos >img{
-    width: 15rem;
+    width: 30rem;
+    height: 35rem;
+    border-radius: 2.7rem;
 }
 #dondeEstamos{
-    margin-top: 5rem;
+    margin: 5rem 0 5rem 0;
 }
+
+
+@media screen and (max-width: 480px){
+    .body{
+        background-color: #1D1D1B;
+    }
+    .logo{
+        position: absolute;
+        left: 55%;
+        bottom: 10%;
+    }
+    .carousel-inner{
+        width: 100%;
+       
+    }
+
+    .nav-link{
+        display: none;
+    }
+    #infoCompra{
+        display: flex;
+        background-color: #1D1D1B;
+        height: 200px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-inner{
+       
+        background-color: #1D1D1B;
+    }
+    
+    .carousel-control-prev-icon{
+        display: none;
+    }
+    .carousel-control-next-icon{
+        display: none;
+    }
+    
+    button{
+        display: none;
+    }
+    
+    
+    .elegi{
+        margin: 0;
+        position: absolute;
+        height: 140px;
+        left: 20.01px;
+        top: 310px;
+    }
+    .preparamos{
+        background-image: url(/img/\(Mobile\)_2_Preparamos_pedido.svg);
+        
+        position: absolute;
+        width: 600px;
+        height: 140px;
+        left: 19px;
+        top: 470px;
+    }
+    .buscar{
+        position: absolute;
+        height: 141px;
+        left: 34px;
+        top: 629px;
+    }
+
+    #seccionPorque{
+        height: 900px;
+        
+    }
+    .porQue{
+        display: block;
+    }
+
+    .porqueViviVegan{
+        display: block;
+        flex-direction: column;
+        
+        width: 25rem;
+    }
+    .porqueViviVegan > h3{
+        display: flex
+
+    }
+}
+
 
 /* como comprar */
 
@@ -113,6 +339,7 @@ h2{
 #comoComprar{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 
@@ -121,142 +348,229 @@ h2{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+    margin: 5rem 0 5rem 0;
 }
 
-.pasos > img{
-    width: 18rem;
-}
-.pasos > div{
-    width: 15rem;
+.pasos > div> img{
+    width: 25rem;
 }
 
-.oculto{
-    display: none;
-}
-.visible{
-    display: flex;
-    margin: 5rem;
-    flex-direction: column;
-}
-
-.visible > input{
-    font-size: 100%;
-    padding: 0.8em;
-    outline: none;
-    border: 2px solid rgb(200, 200, 200);
-    background-color: transparent;
-    border-radius: 20px;
-    width: 100%;
-    height: 1.5rem;
-}
-
-.pedidos{
+.paso{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+    width: 86px;
+    height: 86px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 56px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 62px;
+
 }
 
-.pedido{
+.uno{
+    margin-top: -2%;
+    margin-left: -2%;
+    position: absolute;
+    background: #E83F40;
+    color: #80CFF5;
+}
+.dos{
+    margin-top: -2%;
+    margin-left: 21rem;
+    position: absolute;
+    background: #BCCF00;
+    color:#E83F40;
+    
+}
+.tres{
+    margin-top: -2%;
+    margin-left: -2%;
+    position: absolute;
+    background: #80CFF5;
+    color: #FFE864;
+}
+#seccionPedido{
+    height: 30rem;
+    background-color: #F6A02A;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pedidosTakeaway{
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.pedido> img{
-    width: 8rem;
-}
-/* CONTACTO*/
-.nav-link{
-    color: #fff;
-}
-
-.nav-link:hover{
-    color: yellow;
-}
-
-.titulo-contacto{
     text-align: center;
- }
+}
+
+.pedidosTakeaway >div> p{
+    width: 20rem;
+    height: 0!important;
+    text-align: center;
+}
+
+
+/* CONTACTO*/
+
 .form {
     max-inline-size: 550px;
     margin: auto;
-  }
-  
-  .form label {
+}
+
+.form label {
     display: block;
     margin-block-start: 1em;
     margin-block-end: .5em;
     padding-inline-start: .5em;
-  }
-  
-  .form label span {
+}
+
+.form label span {
     color: #DA1414;
-  }
-  
-  .form input, .form textarea {
+}
+
+.form .form textarea {
     box-sizing: border-box;
     width: 100%;
     font-size: 1rem;
     padding: .8em;
     border-radius: .5em;
     border: 1px solid #858C94;
-  }
-  .form textarea {
+}
+.form textarea {
     margin-block-end: 2em;
     font-family: inherit;
-  }
-  
-  input::-webkit-input-placeholder {
+}
+
+input::-webkit-input-placeholder {
     color: #0F0A0A88;
-  }
+}
 
-  .btn{
-    margin-left: 40%;
-    margin-top: 2%;
-  }
-  
-  
-  .contact {
+.btn, .btn:hover{
+    color:#FFE864;
+    background: #1D1D1B;
+    border-radius: 1.8rem;
+    padding: 10px 43px;
+    
+}
+.contact {
     margin-block-end: 5em;
-  }
-
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
-.contenedor-pregunta.activo .respuesta{
-    opacity: 1;
-    margin-top: 20px;
+.titulo-contacto{
+    text-align: center;
 }
 
-.contenedor-pregunta.activo img{
-    transform: rotate(180deg);
+
+
+.container {
+    width: 90%;
+    margin: 100px auto;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 10px
+        rgba(0,0,0,0.5));
 }
 
- 
-footer{
-    display: flex;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: black;
-    color: yellow;
+.acordeon{
+    position: relative;
+    
 }
 
-.suscribite > input{
-    font-size: 100%;
-    padding: 0.8em;
-    outline: none;
-    border: 2px solid rgb(200, 200, 200);
-    background-color: transparent;
-    border-radius: 20px;
-    width: 100%;
-    height: 1.5rem;
+.title{
+    margin-right: 30px;
+    font-family: 'Trueno';
+    font-style: normal;
+    font-size: 52px;
+    
 } 
+
+.content-acordeon{
+    margin-top: 35px;
+    margin-right: 50px;
+}
+ 
+
+.question-answer{
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+    
+}
+.question{
+    display: flex;
+    justify-content: left;
+}
+
+.title.question{
+    margin: 1.4rem 0rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #1D1D1B;
+
+}
+
+.fas{
+    color: #E83F40;
+}
+
+.question-btn{
+    font-size: 1.5rem;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.up-icon{
+    display: none;
+}
+
+.answer{
+    font-size: 1.2rem;
+    line-height: 1.8;
+    display: none;
+}
+
+
+.show-text .answer{
+    display: block;
+    transition: 12;
+}
+
+.show-text .up-icon{
+    display: inline;
+}
+
+.show-text .down-icon{
+    display: none;
+}
+
+p{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 10px 40px;
+gap: 10px;
+
+width: 1000px;
+height: 83.5px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+}
+
 
 
 /* PRODUCTOS */
@@ -268,10 +582,75 @@ footer{
     text-align: center;
 }
 
-.navbar{
-    justify-content: space-between;
+/* PRODUCTOS */
+
+.logo{
+    width: 70px;
 }
+.titulo-productos{
+    text-align: center;
+}
+
+.filtros{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem;
+}
+
+
+
+.filtros > button{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 12px;
+    gap: 8px;
+    width: 183px;
+    height: 50px;
+    border: 2px solid #1D1D1B;
+    border-radius: 12px;
+    background-color: transparent;
+}
+
+
 
 .redes{
     width: 30px;
+}
+
+
+.contenedorCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.cardProducto{
+    padding: 0px;
+    gap: 8px;
+    width: 318.45px;
+    margin: 1rem;
+    
+    }
+
+ 
+.cardProducto > img{
+    border-radius: 44px 44px 0px 0px;
+}
+.cardProducto > div{
+    border-radius: 0px 0px 44px 44px;
+    width: 318.45px;
+    height: 106px;
+    background-color: #1D1D1B;
+}
+
+.cardCategoria{
+    color: white;
+}
+.cardNombre{
+    color: rgba(246, 160, 42, 1)
 }

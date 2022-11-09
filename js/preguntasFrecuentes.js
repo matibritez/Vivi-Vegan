@@ -1,6 +1,8 @@
-const preguntas = document.querySelectorAll('.preguntas .contenedor-pregunta');
-preguntas.forEach((pregunta) => {
-	pregunta.addEventListener('click', (e) => {
-		console.log(e.currentTarget)
+const questions = document.querySelectorAll('.question-answer')
+
+questions.forEach(function(question){
+    const btn = question.querySelector('.question-btn')
+    btn.addEventListener("click", function(){
+      		question.classList.toggle("show-text")
     })
 })
