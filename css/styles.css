@@ -42,6 +42,7 @@ nav > div > ul > .active > a{
 
 /* Home */
 
+
 #infoCompra{
     display: flex;
     background-color: #1D1D1B;
@@ -66,6 +67,7 @@ nav > div > ul > .active > a{
     gap: 20px;
     color: white;
 }
+
 
 
 
@@ -242,6 +244,93 @@ footer{
     margin: 5rem 0 5rem 0;
 }
 
+
+@media screen and (max-width: 480px){
+    .body{
+        background-color: #1D1D1B;
+    }
+    .logo{
+        position: absolute;
+        left: 55%;
+        bottom: 10%;
+    }
+    .carousel-inner{
+        width: 100%;
+       
+    }
+
+    .nav-link{
+        display: none;
+    }
+    #infoCompra{
+        display: flex;
+        background-color: #1D1D1B;
+        height: 200px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-inner{
+       
+        background-color: #1D1D1B;
+    }
+    
+    .carousel-control-prev-icon{
+        display: none;
+    }
+    .carousel-control-next-icon{
+        display: none;
+    }
+    
+    button{
+        display: none;
+    }
+    
+    
+    .elegi{
+        margin: 0;
+        position: absolute;
+        height: 140px;
+        left: 20.01px;
+        top: 310px;
+    }
+    .preparamos{
+        background-image: url(/img/\(Mobile\)_2_Preparamos_pedido.svg);
+        
+        position: absolute;
+        width: 600px;
+        height: 140px;
+        left: 19px;
+        top: 470px;
+    }
+    .buscar{
+        position: absolute;
+        height: 141px;
+        left: 34px;
+        top: 629px;
+    }
+
+    #seccionPorque{
+        height: 900px;
+        
+    }
+    .porQue{
+        display: block;
+    }
+
+    .porqueViviVegan{
+        display: block;
+        flex-direction: column;
+        
+        width: 25rem;
+    }
+    .porqueViviVegan > h3{
+        display: flex
+
+    }
+}
+
+
 /* como comprar */
 
 h2{
@@ -252,6 +341,7 @@ h2{
     flex-direction: column;
     align-items: center;
 }
+
 
 .pasos{
     display: flex;
@@ -494,6 +584,9 @@ flex-grow: 1;
 
 /* PRODUCTOS */
 
+.logo{
+    width: 70px;
+}
 .titulo-productos{
     text-align: center;
 }
