@@ -121,7 +121,7 @@ nav > div > ul > .active > a{
     padding: 10px 30px;
     gap: 10px;
     background-color: #1D1D1B;
-    color: #F6A02A;
+    color: #FFE864;
     width: 290px;
     height: 106px;
     background: #1D1D1B;
@@ -129,7 +129,7 @@ nav > div > ul > .active > a{
 }
 .swiper-slide > .card >h5{
     background-color: #1D1D1B;
-    color: #F6A02A;
+    color: #FFE864;
 }
 
 .swiper-button-next, .swiper-button-prev{
@@ -139,14 +139,19 @@ nav > div > ul > .active > a{
     height: 70px;
 }
 .swiper-button-next::after, .swiper-button-prev::after{
-    color: #F6A02A;
-    }
+    color:#FFE864;
+}
 
-#seccionDestacados > div> button{
+#seccionDestacados > div> a > button{
     background: #1D1D1B;
     border-radius: 30px;
     border:0;
     margin: 1rem 0 1rem 0;
+    color:#FFE864;
+    background: #1D1D1B;
+    border-radius: 1.8rem;
+    padding: 10px 43px;
+
 }
 /* seccion porque */
 
@@ -202,7 +207,6 @@ footer{
 }
 
 .imgLogo{
-    width: 6rem;
     height: 5rem;
 }
 
