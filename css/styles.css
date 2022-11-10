@@ -254,6 +254,7 @@ footer{
 
 
 @media screen and (max-width: 480px){
+
     
     .carousel-inner{
         width: 100%;
@@ -268,23 +269,39 @@ footer{
         align-items: center;
     }
 
-    .carousel-inner{
-       
+
+    .body{
         background-color: #1D1D1B;
     }
-    
+    .logo{
+        position: absolute;
+        left: 80%;
+        bottom: 10%;
+    }
+    .nav-item{
+        display: none;
+    }
+
+    .carousel-inner{
+        width: 100%;
+        background-color: #1D1D1B;
+    }
+    .carousel-indicators{
+        display: none;
+    }
     .carousel-control-prev-icon{
         display: none;
     }
     .carousel-control-next-icon{
         display: none;
     }
-    
-    button{
-        display: none;
+    #infoCompra{
+        display: flex;
+        background-color: #1D1D1B;
+        height: 200px;
+        flex-direction: column;
+        align-items: center;
     }
-    
-    
     .elegi{
         margin: 0;
         position: absolute;
@@ -308,6 +325,13 @@ footer{
         top: 629px;
     }
 
+    
+    
+    .card{
+        display: flex;
+        
+        
+    }
     #seccionPorque{
         height: 900px;
         
@@ -317,17 +341,38 @@ footer{
     }
 
     .porqueViviVegan{
-        display: block;
+        display: flex;
         flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
         
-        width: 25rem;
+        width: 234px;
+        height: 115px;
     }
-    .porqueViviVegan > h3{
-        display: flex
 
+    .porqueViviVegan h3{
+        width: 67px;
+height: 16px;
+
+font-family: 'Trueno';
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 22px;
+display: flex;
+align-items: center;
     }
-}
+    .porqueViviVegan p{
+        width: 234px;
+height: 89px;
 
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+    }
 
 /* como comprar */
 
@@ -662,6 +707,7 @@ flex-grow: 1;
 }
 .cardNombre{
     color: rgba(246, 160, 42, 1)
+
 }
 @media screen and (max-width: 480px){
 
@@ -713,3 +759,5 @@ flex-grow: 1;
 
 
 }
+
+
