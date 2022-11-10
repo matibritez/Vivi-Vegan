@@ -24,13 +24,18 @@ nav{
     justify-content: space-between;
 }
 
-nav > div > ul > .active > .subrayado{
+#navbarNav > ul{
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav > div > div>  ul > .active > .subrayado{
     display: flex;
     background-color: #F6A02A;
     height: 0.25rem;
 }
 
-nav > div > ul > .active > a{
+nav > div > div > ul > .active > a{
     display: block;
     color: #E83F40;
     background-color: #1D1D1B;
@@ -39,7 +44,6 @@ nav > div > ul > .active > a{
 .nav-link, .nav-link:hover{
     color: #fff;
 }
-
 /* Home */
 
 
@@ -250,22 +254,12 @@ footer{
 
 
 @media screen and (max-width: 480px){
-    .body{
-        background-color: #1D1D1B;
-    }
-    .logo{
-        position: absolute;
-        left: 55%;
-        bottom: 10%;
-    }
+    
     .carousel-inner{
         width: 100%;
        
     }
 
-    .nav-link{
-        display: none;
-    }
     #infoCompra{
         display: flex;
         background-color: #1D1D1B;
@@ -668,4 +662,54 @@ flex-grow: 1;
 }
 .cardNombre{
     color: rgba(246, 160, 42, 1)
+}
+@media screen and (max-width: 480px){
+
+    /*Navbar */
+    .navbar-toggler{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+    }
+    .navbar-toggler:focus{
+        box-shadow: none;
+    }
+    .navbar-toggler-icon{
+        background-image: none;
+    }
+    #navbarNav >ul{
+        align-items: center;
+    }
+    #logo{
+        display: none;
+    }
+
+    /*footer*/
+    footer{
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+        padding: 2rem 0 2rem 0;
+    }
+
+    .imgLogo{
+        height: 4rem;
+    }
+
+    .suscribite > form{
+        flex-direction: column;
+
+    }
+
+    .suscribite > form > input{
+        margin-bottom: 1rem;
+
+    }
+    #btnSuscribite{
+        width: 6rem;
+    }
+
+
 }
