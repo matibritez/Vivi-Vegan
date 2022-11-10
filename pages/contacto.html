@@ -12,29 +12,33 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>     
 </head>
     <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <ul class="navbar-nav mx-auto">
-            <li class="nav-item">
-                <a class="nav-link"  href="/pages/productos.html">PRODUCTOS</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link" href="/pages/como_comprar.html">COMO COMPRAR</a>
-            </li>
-            <a class="navbar-brand" href="../index.html"><img src="/img/logo2023.png" class="logo"alt="LOGO"></a>
-            <li class="nav-item">
-                <a class="nav-link" href="/pages/sobre_nosotros.html">SOBRE NOSOTROS</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="/pages/contacto.html">FAQ</a><span class="subrayado"></span>
-            </li>
-            </ul>
-        </div>
-        </div>
-    </nav>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><img src="../img/icono_menu.svg" alt=""></span>
+                <a class="navbar-brand" href="../index.html"><img src="/img/logo2023.png" class="logo"alt="LOGO"></a>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="/pages/productos.html">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="/pages/como_comprar.html">COMO COMPRAR</a>
+                    </li>
+                    <a class="navbar-brand" id="logo" href="../index.html"><img src="/img/logo2023.png" class="logo"alt="LOGO"></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/sobre_nosotros.html">SOBRE NOSOTROS</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/pages/contacto.html">CONTACTO</a><span class="subrayado"></span>
+                    </li>
+                </ul>
+            </div>
+            
+            </div>
+            </div>
+        </nav>
 
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -65,8 +69,8 @@
     <div class="wrapper">
         <div class="container">
         <h2 class="titulo-contacto">ENVIANOS TU CONSULTA</h2>
-        <form id="form" method="post" class="form">
-            <div class="row">
+        <form id="form" method="post" class="form d-flex">
+            <div class="d-flex">
                 <div class="col">
                     <input type="text" id="nombre"class="form-control" placeholder="Nombre">
                 </div>
@@ -77,14 +81,14 @@
             <div class="col">
                 <input type="text" id="email" class="form-control" placeholder="Email">
             </div>
-            <div class="form-row">
+            <div class="col">
                 <textarea placeholder="Mensaje" class="form-control" id="mensaje" rows="10" required></textarea>
             </div>
             <input type="submit" id="enviarMail" class="btn" value="Enviar">
         </form>
         </div>
     </div>
-    <div class="container">
+    <div class="container d-flex">
         <h2 class="title">
             PREGUNTAS FRECUENTES
         </h2>
@@ -158,7 +162,7 @@
                             </span>
                         </button>
                         <h3 class="title-question">
-                            ¿Puede retirar otra persona mi pedido.
+                            ¿Puede retirar otra persona mi pedido?
                         </h3>
                     </div>
                     <hr/>
