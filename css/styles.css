@@ -254,12 +254,7 @@ footer{
 
 
 @media screen and (max-width: 480px){
-
-    
-    .carousel-inner{
-        width: 100%;
-       
-    }
+   
 
     #infoCompra{
         display: flex;
@@ -269,39 +264,20 @@ footer{
         align-items: center;
     }
 
-
-    .body{
-        background-color: #1D1D1B;
-    }
-    .logo{
-        position: absolute;
-        left: 80%;
-        bottom: 10%;
-    }
-    .nav-item{
-        display: none;
-    }
-
-    .carousel-inner{
-        width: 100%;
-        background-color: #1D1D1B;
-    }
-    .carousel-indicators{
-        display: none;
-    }
+    
+    
     .carousel-control-prev-icon{
         display: none;
     }
     .carousel-control-next-icon{
         display: none;
     }
-    #infoCompra{
-        display: flex;
-        background-color: #1D1D1B;
-        height: 200px;
-        flex-direction: column;
-        align-items: center;
+    
+    button{
+        display: none;
     }
+    
+    
     .elegi{
         margin: 0;
         position: absolute;
@@ -325,13 +301,6 @@ footer{
         top: 629px;
     }
 
-    
-    
-    .card{
-        display: flex;
-        
-        
-    }
     #seccionPorque{
         height: 900px;
         
@@ -341,37 +310,14 @@ footer{
     }
 
     .porqueViviVegan{
-        display: flex;
+        display: block;
         flex-direction: column;
-        align-items: flex-start;
-        padding: 0px;
-        gap: 10px;
         
-        width: 234px;
-        height: 115px;
+        width: 25rem;
     }
+    .porqueViviVegan > h3{
+        display: flex
 
-    .porqueViviVegan h3{
-        width: 67px;
-height: 16px;
-
-font-family: 'Trueno';
-font-style: normal;
-font-weight: 900;
-font-size: 18px;
-line-height: 22px;
-display: flex;
-align-items: center;
-    }
-    .porqueViviVegan p{
-        width: 234px;
-height: 89px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 13px;
-line-height: 16px;
     }
 }
 
@@ -709,8 +655,9 @@ flex-grow: 1;
 }
 .cardNombre{
     color: rgba(246, 160, 42, 1)
-
 }
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 480px){
 
     /*Navbar */
@@ -760,6 +707,80 @@ flex-grow: 1;
     }
 
 
+
+}
+ 
+
+/* MEDIA QUERIES PRODUCTO */
+@media screen and (max-width:480px){
+    
+    .carousel-inner{
+        height: 300px;
+    }
+    
+
+    #milanesas{
+        display: none;
+    }
+
+    #burger{
+        display: none;
+    }
+
+    #parrilla{
+        display: none;
+    }
+    
+    #mayos{
+        display: none;
+    }
+
+    #todos{
+        display: none;
+    }
+    
+    .contenedorCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        justify-items: center;
+    }
+    .cardProducto{
+    padding: 0px;
+    gap: 8px;
+    width: 200px;
+    margin: 1rem;
+    
+    }
+
+.cardProducto > img{
+    border-radius: 44px 44px 0px 0px;
+}
+.cardProducto > div{
+    border-radius: 0px 0px 44px 44px;
+    width: 200.45px;
+    height: 106px;
+    background-color: #1D1D1B;
 }
 
+.cardCategoria{
+    color: white;
+}
+.cardNombre{
+    color: rgba(246, 160, 42, 1);
+    text-align: center;
+}
+}
+
+/* MEDIA QUERIES PRODUCTO */
+
+@media screen and(max-width:480px){
+
+   
+}   
+
+/* MEDIA QUERIES CONTACTO */
+@media screen and(max-width:480px){
+    
+  
+}   
 
