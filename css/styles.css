@@ -15,7 +15,7 @@ body{
 }
 
 .carousel-inner{
-    height: 675px
+    height: auto;
 }
 
 /*Navbar */
@@ -43,6 +43,10 @@ nav > div > div > ul > .active > a{
 
 .nav-link, .nav-link:hover{
     color: #fff;
+}
+
+.logo{
+    width: 6rem;
 }
 /* Home */
 
@@ -113,12 +117,17 @@ nav > div > div > ul > .active > a{
 
 /* Cards */
 .swiper-slide > .card{
-    width: 18rem;
-    border-radius: 45px
+    width: 20rem;
+    height: 25rem;
+    border-radius: 45px;
 }
-.swiper-slide > img{
-    width: 290px;
-    height: 251px;
+.swiper-slide > .card > img{
+    width: 20rem;
+    height: 19rem;
+    border-radius: 44px 44px 0px 0px;
+}
+.card-img-top{
+    width: auto;
     border-radius: 44px 44px 0px 0px;
 }
 .swiper-slide > .card > div{
@@ -126,14 +135,15 @@ nav > div > div > ul > .active > a{
     gap: 10px;
     background-color: #1D1D1B;
     color: #FFE864;
-    width: 290px;
-    height: 106px;
-    background: #1D1D1B;
+    width: 19.95rem;
+    overflow: hidden;
+    height: 6rem;
     border-radius: 0px 0px 44px 44px;
 }
 .swiper-slide > .card >h5{
     background-color: #1D1D1B;
     color: #FFE864;
+    overflow: hidden;
 }
 
 .swiper-button-next, .swiper-button-prev{
@@ -181,11 +191,7 @@ nav > div > div > ul > .active > a{
     align-items: center;
     width: 25rem;
 }
-.porqueViviVegan > h3{
-    font-weight: 500;
-    font-size: 2.5rem;
-}
-.porqueViviVegan >div{
+.porqueViviVegan > .porqueImagen{
     width: 9rem;
     height: 9rem;
     border-radius: 50%;
@@ -193,7 +199,16 @@ nav > div > div > ul > .active > a{
     display: flex;
     justify-content: center;
 }
-.porqueViviVegan >p{
+.porqueTexto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.porqueViviVegan > .porqueTexto >h3{
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+.porqueViviVegan > .porqueTexto >p{
     width: 25rem;
 }
 
@@ -251,83 +266,6 @@ footer{
 #dondeEstamos{
     margin: 5rem 0 5rem 0;
 }
-
-
-@media screen and (max-width: 480px){
-    
-    .carousel-inner{
-        width: 100%;
-       
-    }
-
-    #infoCompra{
-        display: flex;
-        background-color: #1D1D1B;
-        height: 200px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .carousel-inner{
-       
-        background-color: #1D1D1B;
-    }
-    
-    .carousel-control-prev-icon{
-        display: none;
-    }
-    .carousel-control-next-icon{
-        display: none;
-    }
-    
-    button{
-        display: none;
-    }
-    
-    
-    .elegi{
-        margin: 0;
-        position: absolute;
-        height: 140px;
-        left: 20.01px;
-        top: 310px;
-    }
-    .preparamos{
-        background-image: url(/img/\(Mobile\)_2_Preparamos_pedido.svg);
-        
-        position: absolute;
-        width: 600px;
-        height: 140px;
-        left: 19px;
-        top: 470px;
-    }
-    .buscar{
-        position: absolute;
-        height: 141px;
-        left: 34px;
-        top: 629px;
-    }
-
-    #seccionPorque{
-        height: 900px;
-        
-    }
-    .porQue{
-        display: block;
-    }
-
-    .porqueViviVegan{
-        display: block;
-        flex-direction: column;
-        
-        width: 25rem;
-    }
-    .porqueViviVegan > h3{
-        display: flex
-
-    }
-}
-
 
 /* como comprar */
 
@@ -582,21 +520,8 @@ flex-grow: 1;
 }
 
 
-
 /* PRODUCTOS */
 
-.logo{
-    width: 70px;
-}
-.titulo-productos{
-    text-align: center;
-}
-
-/* PRODUCTOS */
-
-.logo{
-    width: 70px;
-}
 .titulo-productos{
     text-align: center;
 }
@@ -644,16 +569,18 @@ flex-grow: 1;
     gap: 8px;
     width: 318.45px;
     margin: 1rem;
+    height: 21rem;
     
     }
 
 .cardProducto > img{
+    height: 15rem;
     border-radius: 44px 44px 0px 0px;
 }
 .cardProducto > div{
     border-radius: 0px 0px 44px 44px;
     width: 318.45px;
-    height: 106px;
+    height: 6rem;
     background-color: #1D1D1B;
 }
 
@@ -663,6 +590,13 @@ flex-grow: 1;
 .cardNombre{
     color: rgba(246, 160, 42, 1)
 }
+.botonAlerta, .botonAlerta:focus{
+    background: #1D1D1B !important;
+    border-radius: 30px !important;
+    color: #f6a02a !important;
+    box-shadow: none !important;
+}
+
 @media screen and (max-width: 480px){
 
     /*Navbar */
@@ -711,5 +645,110 @@ flex-grow: 1;
         width: 6rem;
     }
 
+    .carousel-inner{
+        height: auto;
+    }
+    #infoCompra{
+        overflow: hidden;
+        height: auto;
+        padding: 2rem 0 2rem 0;
+    }
+    #infoCompra >div{
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 0 2rem 0;
+    
+    }
+    .elegi, .buscar{
+        margin-left: 1rem;
+        width: 15rem;
+    
+    }
+    .preparamos{
+        width: 15rem;
+        margin-left: 14rem;
+    }
+    /* seccion destacados */
+    #seccionDestacados{
+        height: auto;
+        
+    }
+    #seccionDestacados >h2{
+        size: 25px;
+        
+    }
+    .swiper-slide {
+        font-size: 12px;
+        width: 15rem;
+    }
 
+    /* Cards */
+    .card{
+        height: 20rem;
+    }
+    .swiper-slide > .card{
+        width: 15rem;
+        height: 20rem;
+    }
+    .swiper-slide > .card > img{
+        width: 15rem;
+        height: 14rem;
+    }
+    .swiper-slide > .card > div{
+        width: 15rem;
+        height: 6rem;;
+    }
+    .swiper-slide > .card > div> h5{
+        font-size: medium;
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        width: 40px;
+        height: 40px;
+    }
+    .swiper-button-next::after, .swiper-button-prev::after{
+        font-size: medium;
+    }
+
+    /* seccion porque */
+
+    #seccionPorque{
+        margin-top: 1rem;
+        height: 100%;
+        padding: 1rem;
+    }
+    #seccionPorque >h2{
+        font-size: 2rem;
+        padding: 1rem 0 1rem 0;
+    }
+    .porQue{
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .porqueViviVegan{
+        width: 100%;
+        height: 15rem;
+        flex-direction: row;
+        overflow: hidden;
+    }
+
+    .porqueViviVegan > .porqueImagen{
+        width: 8rem;
+        height: 8rem;
+    }
+    .porqueViviVegan > .porqueImagen > img{
+        width: 8rem;
+        height: 8rem;
+    }
+    .porqueViviVegan > .porqueTexto > h3{
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    .porqueViviVegan > .porqueTexto > p{
+        overflow: hidden;
+        height: auto;
+        width: auto;
+    } 
 }
