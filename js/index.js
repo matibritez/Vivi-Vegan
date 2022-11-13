@@ -1,4 +1,3 @@
-// cards con imagenes home
 
 const destacados = document.getElementById('productosDestacados')
 
@@ -45,6 +44,7 @@ const crearCard = () =>{
                 <div class="card">
                     <img src=${e.url} class="card-img-top" alt="${e.nombre}">
                     <div>
+                    <h5 class="card-title text-uppercase text-white">${e.categoria}</h5>
                         <h5 class="card-title text-uppercase">${e.nombre}</h5>
                     </div>
                 </div>
@@ -64,15 +64,23 @@ const crearCard = () =>{
 setTimeout(()=>{
     crearCard()
     let swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 20,
-        slidesPerGroup: 3,
         loop: true,
         loopFillGroupWithBlank: true,
         navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
         },
+        breakpoints: {
+            // when window width is >= 480px
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            640: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                }
+        }
     });
 },2500)
 

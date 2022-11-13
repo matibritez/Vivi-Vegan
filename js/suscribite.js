@@ -36,11 +36,12 @@ function enviarSuscripcion(e) {
             if (response.ok) {
                 Swal.fire({
                     icon: 'success',
-                    iconColor:'#fad8ce',
-                    title: 'Su consulta ha sido enviada',
-                    text: 'Estaremos respondiendo pronto!',
+                    iconColor:'#F6A02A',
+                    color:"#1D1D1B",
+                    title: 'Te suscribiste exitosamente!',
+                    confirmButtonText:"Cerrar",
                     customClass:{
-                        confirmButton:''
+                        confirmButton:'botonAlerta'
                     }
                 })
                 this.reset();
@@ -50,6 +51,17 @@ function enviarSuscripcion(e) {
                 }
         })
         .catch((error) => {
+            Swal.fire({
+                icon: 'error',
+                iconColor:'#F6A02A',
+                color:"#1D1D1B",
+                title: 'Hubo un error con su suscripción',
+                text: 'Por favor, vuelva a intentarlo',
+                confirmButtonText:"Cerrar",
+                customClass:{
+                    confirmButton:'botonAlerta'
+                }
+            })
             console.log('Oops... ' + error);
         });
 }

@@ -33,7 +33,7 @@
   {
     "id": 6,
     "url": "../img/productos/milanesas/nuggets.jpg",
-    "nombre": "Nuggets",
+    "nombre": "NUGGETS",
     "categoria": "milanesas"
   },
   {
@@ -87,7 +87,7 @@
   {
     "id": 16,
     "url": "../img/productos/dips/hummus.jpg",
-    "nombre": "REMOLACHA,ZANAHORIA O ARVEJAS",
+    "nombre": "REMOLACHA ZANAHORIA",
     "categoria": "Mayos y Dips"
   },
   {

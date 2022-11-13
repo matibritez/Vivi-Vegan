@@ -8,7 +8,7 @@ form.addEventListener('submit', enviarFormulario)
 function enviarFormulario(e) {
 
     e.preventDefault();
-
+   
 
     let nombre = document.getElementById('nombre').value
     let telefono =document.getElementById('telefono').value
@@ -43,11 +43,13 @@ function enviarFormulario(e) {
             if (response.ok) {
                 Swal.fire({
                     icon: 'success',
-                    iconColor:'#fad8ce',
+                    iconColor:'#F6A02A',
+                    color:"#1D1D1B",
                     title: 'Su consulta ha sido enviada',
-                    text: 'Estaremos respondiendo pronto!',
+                    text: '¡Estaremos respondiendo pronto!',
+                    confirmButtonText:"Cerrar",
                     customClass:{
-                        confirmButton:'btn_4'
+                        confirmButton:'botonAlerta'
                     }
                 })
                 this.reset();
@@ -57,6 +59,17 @@ function enviarFormulario(e) {
                 }
         })
         .catch((error) => {
+            Swal.fire({
+                    icon: 'error',
+                    iconColor:'#F6A02A',
+                    color:"#1D1D1B",
+                    title: 'Hubo un error con su consulta',
+                    text: 'Por favor, vuelva a intentarlo',
+                    confirmButtonText:"Cerrar",
+                    customClass:{
+                        confirmButton:'botonAlerta'
+                    }
+                })
             console.log('Oops... ' + error);
         });
 }

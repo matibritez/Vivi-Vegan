@@ -45,9 +45,9 @@ const crearCards = () =>{
             
                 <div class="cardProducto" data-name="${e.categoria.toUpperCase()}">
                     <img src=${e.url} class="card-img-top w-100" alt="${e.nombre}">
-                    <div class="d-flex flex-column justify-content-center align-items-center">
+                    <div id='product'class="d-flex flex-column justify-content-center align-items-center">
                         <h5 class="card-title text-uppercase cardCategoria">${e.categoria}</h5>
-                        <h5 class='cardNombre'}>${e.nombre}</h5>
+                        <h5 class='cardNombre'>${e.nombre}</h5>
                     </div>
                 </div>
                 
