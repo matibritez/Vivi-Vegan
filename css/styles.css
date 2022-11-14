@@ -360,6 +360,7 @@ h2{
 
 .pasos > div> img{
     width: 25rem;
+    
 }
 
 .paso{
@@ -435,6 +436,10 @@ h2{
     align-items: center;
 }
 
+.inputs{
+  display: flex;
+}
+
 .form > div{
     padding-bottom: 1rem;
     width: 100%;
@@ -479,6 +484,12 @@ input::-webkit-input-placeholder {
     border-radius: 1.8rem;
     padding: 10px 43px;
     width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-left: 30%;
     
 }
 .contact {
@@ -547,6 +558,7 @@ input::-webkit-input-placeholder {
     background: transparent;
     border-color: transparent;
     cursor: pointer;
+    display: flex;
 }
 
 .up-icon{
@@ -579,9 +591,6 @@ flex-direction: column;
 align-items: flex-start;
 padding: 10px 40px;
 gap: 10px;
-
-width: 1000px;
-height: 83.5px;
 
 
 /* Inside auto layout */
@@ -761,9 +770,14 @@ flex-grow: 1;
 @media screen and (max-width:480px){
     
     .carousel-inner{
-        height: 300px;
+        width: 100%;
     }
     
+    .filtros{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-left: 6rem
+    }
 
     #milanesas{
         display: none;
@@ -785,11 +799,12 @@ flex-grow: 1;
         display: none;
     }
     
+
     .contenedorCards{
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        justify-items: center;
-        padding: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-items: center;
+    padding: 15%;
     }
     .cardProducto{
     gap: 8px;
@@ -813,91 +828,89 @@ flex-grow: 1;
     
     }
 
-.cardProducto > img{
-  width: 159px;
-  height: 70%;
-  
-  
-  border-radius: 24px 24px 0px 0px;
+    .cardProducto > img{
+    width: 159px;
+    height: 70%;
+    border-radius: 24px 24px 0px 0px;
   
   /* Inside auto layout */
   
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 1;
-}
-.cardProducto > div{
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 1;
+    }
+    .cardProducto > div{
     border-radius: 0px 0px 44px 44px;
     width: 200.45px;
     height: 106px;
     background-color: #1D1D1B;
-}
+    }   
 
-.cardCategoria{
+    .cardCategoria{
     color: white;
-}
-.cardNombre{
+    }
+    .cardNombre{
     color: rgba(246, 160, 42, 1);
     text-align: center;
-}
-#product{
-  display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 10px 30px;
-gap: 10px;
+    }
+    #product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10px;
+    width: 159px;
+    height: 90px;
+    }
 
-width: 159px;
-height: 90px;
-}
-
-#product h5{
-  width: 99px;
-  font-family: 'Trueno';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  font-weight: 600;
-  font: Inter;
-  display: flex;
-  line-height: 23.01px;
-  align-items: center;
-  text-align: center;
+    #product h5{
+    width: 99px;
+    font-family: 'Trueno';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    font-weight: 600;
+    font: Inter;
+    display: flex;
+    line-height: 23.01px;
+    align-items: center;
+    text-align: center;
+    
   
-  /* Blanco */
+/* Inside auto layout */
   
-  
-  
-  
-  /* Inside auto layout */
-  
-  flex: none;
-  order: 0;
-  flex-grow: 1;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
 
 /* Negro nuevo */
 
-background: #1D1D1B;
-border-radius: 0px 0px 24px 24px;
+    background: #1D1D1B;
+    border-radius: 0px 0px 24px 24px;
 
 /* Inside auto layout */
 
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    }
+
+    .titulo-productos{
+      text-align: center;
+      margin-left: 60px;
+    }
 }
-}
 
 
 
-/* MEDIA QUERIES CONTACTO */
+/* MEDIA QUERIES INDEX */
 @media screen and(max-width:480px){
     
   
-}   
+  
 
     /* seccion porque */
 
@@ -940,3 +953,91 @@ flex-grow: 0;
         height: auto;
         width: auto;
     } 
+}
+
+/* MEDIA QUERIES CONTACTO */
+@media screen and(max-width:480px){
+  
+
+
+.content-acordeon{
+  margin-top: 35px;
+  margin-right: 50px;
+}
+
+
+.question-answer{
+  width: 100%;
+  
+}
+.question{
+  display: flex;
+  justify-content: left;
+}
+
+.title.question{
+  margin: 1.4rem 0rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: #1D1D1B;
+
+}
+
+.fas{
+  color: #E83F40;
+}
+
+.question-btn{
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  display: flex;
+}
+
+.up-icon{
+  display: none;
+}
+
+.answer{
+  font-size: 1.2rem;
+  line-height: 1.8;
+  display: none;
+}
+
+
+.show-text .answer{
+  display: block;
+  transition: 12;
+}
+
+.show-text .up-icon{
+  display: inline;
+}
+
+.show-text .down-icon{
+  display: none;
+}
+  p{
+    height: 150px;
+    width: 100%;
+    line-height: 10rem;
+  } 
+ 
+  
+} 
+
+/* MEDIA QUERIES COMO COMPRAR */
+
+@media screen and(max-width:480px) {
+  h2{
+   
+width: 296px;
+
+
+  }
+    
+}
+
+
+
