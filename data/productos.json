@@ -2,19 +2,19 @@
 
   {
       "id": 1,
-      "url": "../img/productos/parrilla/chorisBombon.jpg",
+      "url": "../img/productos/parrilla/choris_bombon.jpg",
       "nombre": "CHORIZOS BOMBON",
       "categoria": "parrilla"
   },
   {
       "id": 2,
-      "url": "../img/productos/parrilla/superChoris.jpg",
+      "url": "../img/productos/parrilla/super_choris.jpg",
       "nombre": "SUPER CHORIS",
       "categoria": "parrilla"
   },
   {
       "id": 3,
-      "url": "../img/productos/parrilla/bifecitosSeitan.jpg",
+      "url": "../img/productos/parrilla/bifecitos_seitan.jpg",
       "nombre": "BIFECITOS DE SEITÁN",
       "categoria": "parrilla"
   },
@@ -26,7 +26,7 @@
   },
   {
       "id": 5,
-      "url": "../img/productos/milanesas/noPollo.jpg",
+      "url": "../img/productos/milanesas/no_pollo.jpg",
       "nombre": "NO POLLO",
       "categoria": "milanesas"
   },
@@ -44,43 +44,43 @@
   },
   {
     "id": 8,
-    "url": "../img/productos/empanadas/empanadasSoja.jpg",
+    "url": "../img/productos/empanadas/empanadas_soja.jpg",
     "nombre": "SOJA",
     "categoria": "EMPANADAS"
   },
   {
     "id": 9,
-    "url": "../img/productos/empanadas/empanadasVerdura.jpg",
+    "url": "../img/productos/empanadas/empanadas_verdura.jpg",
     "nombre": "VERDURAS",
     "categoria": "EMPANADAS"
   },
   {
     "id": 10,
-    "url": "../img/productos/empanadas/empanadasNoPollo.jpg",
+    "url": "../img/productos/empanadas/empanadas_no_pollo.jpg",
     "nombre": "NO POLLO",
     "categoria": "EMPANADAS"
   },
   {
     "id": 11,
-    "url": "../img/productos/empanadas/empanadasSoja.jpg",
+    "url": "../img/productos/empanadas/empanadas_soja.jpg",
     "nombre": "CARNE DE SEITÁN",
     "categoria": "EMPANADAS"
   },
   {
     "id": 13,
-    "url": "../img/productos/burger/hamburguesasLentejas.jpg",
+    "url": "../img/productos/burger/hamburguesas_lentejas.jpg",
     "nombre": "LENTEJAS",
     "categoria": "burger"
   },
   {
     "id": 14,
-    "url": "../img/productos/burger/hamburguesasRemolacha.jpg",
+    "url": "../img/productos/burger/hamburguesas_remolacha.jpg",
     "nombre": "REMOLACHA",
     "categoria": "burger"
   },
   {
     "id": 15,
-    "url": "../img/productos/burger/hamburguesasTomillo.jpg",
+    "url": "../img/productos/burger/hamburguesas_tomillo.jpg",
     "nombre": "SOJA Y TOMILLO",
     "categoria": "burger"
   },

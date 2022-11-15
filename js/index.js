@@ -13,7 +13,7 @@ let myInit = {
     cache:'default'
 };
 
-const URL=new Request('../data/destacados.json', myInit)
+const URL=new Request('./data/destacados.json', myInit)
 
 fetch(URL)
     .then((response)=>{
