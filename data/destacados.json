@@ -1,13 +1,13 @@
 [
     {
         "id": 1,
-        "url": "../img/productos/burger/hamburguesasLentejas.jpg",
+        "url": "../img/productos/burger/hamburguesas_lentejas.jpg",
         "nombre": "LENTEJAS",
         "categoria": "burger"
     },
     {
         "id": 2,
-        "url": "../img/productos/parrilla/chorisBombon.jpg",
+        "url": "../img/productos/parrilla/choris_bombon.jpg",
         "nombre": "CHORIZOS BOMBON",
         "categoria": "parrilla"
     },
@@ -31,13 +31,13 @@
     },
     {
         "id": 6,
-        "url": "../img/productos/parrilla/bifecitosSeitan.jpg",
+        "url": "../img/productos/parrilla/bifecitos_seitan.jpg",
         "nombre": "BIFECITOS DE SEITÁN",
         "categoria": "parrilla"
     },
     {
         "id": 7,
-        "url": "../img/productos/empanadas/empanadasNoPollo.jpg",
+        "url": "../img/productos/empanadas/empanadas_no_pollo.jpg",
         "nombre": "NO POLLO",
         "categoria": "EMPANADAS"
     }
