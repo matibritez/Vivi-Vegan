@@ -254,7 +254,7 @@ footer{
 #quienesSomos{
     display: grid;
     margin: 5rem 0 5rem 0;
-    grid-template-columns: 8fr 1fr;
+    grid-template-columns: 6fr 2fr;
     align-items: center;
     
 }
@@ -633,6 +633,7 @@ h5{
     gap: 8px;
     width: 183px;
     height: 50px;
+    line-height: 24px;
     border: 2px solid #1D1D1B;
     border-radius: 12px;
     background-color: transparent;
@@ -643,18 +644,31 @@ h5{
 .redes{
     width: 30px;
 }
+.contenido{
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 1029.36px;
+height: 2337px;
+left: 222px;
+top: 402px;
+}
 
 
 .contenedorCards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
+    
 }
-
 .cardProducto{
     padding: 0px;
     gap: 8px;
-    width: 318.45px;
+    width: 300.45px;
     margin: 1rem;
     height: 21rem;
     
@@ -666,7 +680,7 @@ h5{
 }
 .cardProducto > div{
     border-radius: 0px 0px 44px 44px;
-    width: 318.45px;
+    width: 300.45px;
     height: 6rem;
     background-color: #1D1D1B;
 }
@@ -785,7 +799,10 @@ h5{
       grid-template-columns: 1fr 1fr;
       margin-right: 1rem;
       margin-left: 10% ;
+      
     }
+
+    
 
     #milanesas{
         display: none;
@@ -809,39 +826,34 @@ h5{
     
 
     .contenedorCards{
-    display: grid;
+      display: grid;
     grid-template-columns: 1fr 1fr ;
     align-items: center;
-    margin-left: 10%;
-    width: 337px;
+    margin-left: 0;
+    
     left: 19px;
     top: 440px;
     }
     .cardProducto{
-    gap: 8px;
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    width: 159px;
-    height: 212px;
-    
-    border-radius: 24px;
-
-/* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
+      
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0px;
+      margin-left: 30px;
+      width: 180px;
+      height: 312px;
+      /* Inside auto layout */
+      flex: none;
+      order: 0;
+      align-self: stretch;
       flex-grow: 1;
     
     }
 
     .cardProducto > img{
-      width: 159px;
-      height: 123px;
+      width: 180px;
+      height: 153px;
       
   /* Inside auto layout */
   
@@ -871,7 +883,7 @@ h5{
     align-items: center;
     padding: 10px 30px;
     gap: 10px;
-    width: 159px;
+    width: 180px;
     height: 90px;
     }
 
@@ -887,6 +899,7 @@ h5{
     line-height: 14px;
     align-items: center;
     text-align: center;
+    justify-content: center;
     
   
 /* Inside auto layout */
@@ -1205,3 +1218,101 @@ color: #1D1D1B;
   }
 } 
 
+
+/* MEDIA QUERIES SOBRE NOSOTROS */
+
+@media screen and (max-width:480px) {
+  #somos{
+    height: 1050px;
+  }
+
+  .imgQuienesSomos >img {
+    position: absolute;
+    width: 450px;
+    height: 320px;
+    left: 17.24px;
+    top: 400px;
+    background: #D9D9D9;
+    border-radius: 24px;
+}
+
+  #quienes-Somos{
+    position: absolute;
+    width: 336px;
+    height: 39.66px;
+    left: 20px;
+    top: 730px;
+    font-family: 'Trueno';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+
+/* Negro nuevo */
+
+color: #1D1D1B;
+
+}
+  .textoQuienes{
+    position: absolute;
+    width: 450px;
+    height: 160px;
+    left: -20px;
+    top: 750px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #575757;
+  }
+  
+  #dondeTexto{
+    position: absolute;
+    width: 334.97px;
+    height: 30.07px;
+    left: 20.75px;
+    top: 900px;
+    font-family: 'Trueno';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+
+/* Negro nuevo */
+
+    color: #1D1D1B;
+
+  }
+
+  .textoDonde{
+    position: absolute;
+    width: 450px;
+    height: 160px;
+    left: -20px;
+    top: 920px;
+    font-family: 'Trueno';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 114.9%;
+/* or 15px */
+
+
+/* Negro nuevo */
+
+    color: #1D1D1B;
+
+  }
+
+  .mapa{
+    position: absolute;
+    width: 450px;
+    height: 320px;
+    left: 17.24px;
+    top: 980px;
+    background: #D9D9D9;
+    border-radius: 24px;
+
+  }
+}
